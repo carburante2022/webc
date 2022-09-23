@@ -11,11 +11,11 @@ namespace carburanti.Model.Graph
         private string content;
         internal int id;
 
-        public GroupGraph(int id, long? idImpianto, DateOnlyCustom dateOnlyCustom)
+        public GroupGraph(int id, long? idImpianto)
         {
             this.id = id;
             this.idImpianto = idImpianto;
-            this.content = dateOnlyCustom.ToString();
+            this.content = idImpianto.ToString() ?? "xxx";
         }
     }
 }
