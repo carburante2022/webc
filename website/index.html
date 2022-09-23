@@ -57,7 +57,10 @@
 	</head>
 	<body>
 		<div id="visualization"></div>
-
+		<div>
+			<div>Usato https://visjs.org/, Newtonsoft.Json, CsvHelper</div>
+			<div>Dataset: https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv</div>
+		</div>
 		<script>
 			// create a dataSet with groups
 			var groups = new vis.DataSet();
@@ -69,7 +72,7 @@
 			const yyyy = today.getFullYear();
 			let mm = today.getMonth() + 1; // Months start at 0!
 			let dd = today.getDate();
-			const formattedToday = yyyy + '-' + mm + '-' + dd;
+			const formattedToday = yyyy + "-" + mm + "-" + dd;
 
 			var dataset = new vis.DataSet(items2);
 			var options = {
