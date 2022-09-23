@@ -1,5 +1,4 @@
-﻿using carburanti.Model.Dates;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace carburanti.Model.Graph
 {
@@ -57,12 +56,12 @@ namespace carburanti.Model.Graph
             this.groups.list ??= new List<GroupGraph>();
             foreach (var x in this.groups.list.Where(x => i2.descCarburante == x.descCarburante && i2.isSelf == x.isSelf))
             {
-                return x.id;
+                return x.idInt;
             }
 
             var groupGraph = this.groups.GetNewGroup(i2);
 
-            return groupGraph?.id;
+            return groupGraph?.idInt;
         }
 
         internal Groups GetGroups()

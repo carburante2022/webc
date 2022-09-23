@@ -1,9 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace carburanti.Model.Graph
 {
@@ -17,7 +12,7 @@ namespace carburanti.Model.Graph
         {
             this.list ??= new List<GroupGraph>();
 
-            var max = this.list.Count == 0 ? 1 : (this.list.Max(x => x.id) + 1);
+            var max = this.list.Count == 0 ? 1 : (this.list.Max(x => x.idInt) + 1);
 
             if (i2.dtComu == null) return null;
             GroupGraph groupGraph = new(id: max, idImpianto: i2.idImpianto, i2.descCarburante, i2.isSelf);

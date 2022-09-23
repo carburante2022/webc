@@ -84,7 +84,7 @@ namespace carburanti.Model.Graph
             return total / count;
         }
 
-        internal Dictionary<string, Dictionary<bool, Prezzo>>? GetStat()
+        internal Dictionary<string, Dictionary<bool, Prezzo>> GetStat()
         {
             return this.summary;
         }

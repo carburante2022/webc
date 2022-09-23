@@ -1,12 +1,5 @@
-﻿using CsvHelper.Configuration;
-using CsvHelper;
-using System;
-using System.Collections.Generic;
+﻿using CsvHelper;
 using System.Globalization;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using carburanti.Model;
 using carburanti.Model.Dates;
 
@@ -17,18 +10,17 @@ namespace carburanti.Util.Scraper
         public static void Download()
         {
             const string url = "https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv";
-            var r = Util.Downloader.Download(url);
+            var r = Downloader.Download(url);
             var firstNewLine = r.IndexOf('\n');
             var data = r[..firstNewLine].Trim();
             var dateOnly = GetDateEstratto(data);
             var recordsString = r[firstNewLine..].Trim();
 
-            var m = Util.Memory.GenerateStreamFromString(recordsString);
+            var m = Memory.GenerateStreamFromString(recordsString);
 
             using var reader = new StreamReader(m);
             using var csv = new CsvReader(reader, CultureInfo.GetCultureInfoByIetfLanguageTag("it"));
             var records = csv.GetRecords<dynamic>().ToList();
-            ;
             var prezziGiorno = new PrezziGiorno(dateOnly);
             foreach (var prezzo in records.Select(record => new Prezzo(record)))
             {

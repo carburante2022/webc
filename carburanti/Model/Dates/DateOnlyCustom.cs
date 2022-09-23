@@ -1,10 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace carburanti.Model.Dates
 {
@@ -32,7 +27,7 @@ namespace carburanti.Model.Dates
             this.day = Convert.ToInt32(s[2]);
         }
 
-        public override string? ToString() {
+        public override string ToString() {
             return this.year.ToString() + "-" + this.month.ToString() + "-" + this.day.ToString();
         }
 
