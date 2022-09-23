@@ -23,3 +23,18 @@ jobs:
       run: dotnet build --no-restore
     - name: Run
       run: dotnet run --project "carburanti/carburanti.csproj"
+    - name: Create commit
+      run: |
+        [[ -z $(git status --porcelain) ]] && exit 0
+        git add .
+        git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+        git config --local user.name 'github-actions[bot]'
+        TZ= printf -v commit_msg 'update carburanti: %(%c)T'
+        git commit -m "$commit_msg"
+    - name: Pull repository (2)
+      run: git pull
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: main
+        github_token: ${{ secrets.GITHUB_TOKEN }}
