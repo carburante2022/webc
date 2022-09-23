@@ -8,14 +8,20 @@ namespace carburanti.Model.Graph
     internal class GroupGraph
     {
         internal long? idImpianto;
-        private string content;
+#pragma warning disable IDE0052 // Rimuovi i membri privati non letti
+        private readonly string? content;
+#pragma warning restore IDE0052 // Rimuovi i membri privati non letti
         internal int id;
+        internal string? descCarburante;
+        internal bool? isSelf;
 
-        public GroupGraph(int id, long? idImpianto)
+        public GroupGraph(int id, long? idImpianto, string? descCarburante, bool? isSelf)
         {
             this.id = id;
             this.idImpianto = idImpianto;
             this.content = idImpianto.ToString() ?? "xxx";
+            this.descCarburante = descCarburante;
+            this.isSelf = isSelf;
         }
     }
 }

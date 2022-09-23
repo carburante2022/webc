@@ -49,5 +49,10 @@ namespace carburanti.Model.Dates
 
             return false;
         }
+
+        public override int GetHashCode()
+        {
+            return this.year.GetHashCode() ^ this.month.GetHashCode() ^ this.day.GetHashCode();
+        }
     }
 }

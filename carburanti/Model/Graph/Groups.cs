@@ -21,7 +21,7 @@ namespace carburanti.Model.Graph
 
             if (i2.dtComu != null)
             {
-                GroupGraph groupGraph = new(id: max, idImpianto: i2.idImpianto);
+                GroupGraph groupGraph = new(id: max, idImpianto: i2.idImpianto, i2.descCarburante, i2.isSelf);
                 this.list.Add(groupGraph);
                 return groupGraph;
             }

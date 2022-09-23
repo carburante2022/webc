@@ -21,6 +21,11 @@ namespace carburanti.Model
         private DateOnly dateOnly;
         public TimeOnly? ttComu;
 
+        public Prezzo()
+        {
+
+        }
+
         public Prezzo(dynamic record)
         {
             ;
