@@ -4,3 +4,4 @@ bin/
 *.dll
 *.exe
 *.pdb
+.idea/
