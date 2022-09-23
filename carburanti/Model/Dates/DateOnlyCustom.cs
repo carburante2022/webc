@@ -13,9 +13,9 @@ namespace carburanti.Model.Dates
     [TypeConverter(typeof(DateTimeCustomTypeConverter))]
     public class DateOnlyCustom
     {
-        public int year;
-        public int month;
-        public int day;
+        public readonly int year;
+        public readonly int month;
+        public readonly int day;
 
         public DateOnlyCustom(DateOnly dateOnly)
         {
@@ -38,16 +38,8 @@ namespace carburanti.Model.Dates
 
         public override bool Equals(object? obj)
         {
-            if (obj is null)
-                return false;
-
-            if (obj is DateOnlyCustom dt)
-            {
-                if (this.year == dt.year && this.month == dt.month && this.day == dt.day)
-                    return true;
-            }
-
-            return false;
+            if (obj is not DateOnlyCustom dt) return false;
+            return this.year == dt.year && this.month == dt.month && this.day == dt.day;
         }
 
         public override int GetHashCode()

@@ -40,7 +40,6 @@ namespace carburanti.Util.Scraper
 
         private static DateOnlyCustom GetDateEstratto(string data)
         {
-            ;
             var s = data.Split(' ');
             var s2 = s[2].Split("-");
 

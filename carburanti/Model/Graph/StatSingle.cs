@@ -36,10 +36,12 @@ namespace carburanti.Model.Graph
             {
                 foreach (var i3 in i.Value)
                 {
-                    List<Prezzo>? i2 = i3.Value;
-                    decimal? avg = MediaPrezzo(i2);
+                    var i2 = i3.Value;
+                    var avg = MediaPrezzo(i2);
 
                     if (avg == null) continue;
+                    if (i2 == null) continue;
+                    
                     var prezzo = i2[0];
                     var prezzoDescCarburante = prezzo.descCarburante;
                     if (prezzoDescCarburante != null && !summary.ContainsKey(prezzoDescCarburante))
