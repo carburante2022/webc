@@ -57,9 +57,39 @@
 	</head>
 	<body>
 		<div id="visualization"></div>
-		<div>
-			<div>Usato https://visjs.org/, Newtonsoft.Json, CsvHelper</div>
-			<div>Dataset: https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv</div>
+		<br />
+		<div style="padding-left: 20px;">
+			<br />
+			<div>
+				Usato
+				<ul>
+					<li><a href="https://visjs.org/">https://visjs.org/</a></li>
+					<li>
+						<a href="https://www.newtonsoft.com/json"
+							>https://www.newtonsoft.com/json</a
+						>
+					</li>
+					<li>
+						<a href="https://joshclose.github.io/CsvHelper/"
+							>https://joshclose.github.io/CsvHelper/</a
+						>
+					</li>
+				</ul>
+			</div>
+			<br />
+			<div>
+				Dataset:
+				<a href="https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv"
+					>https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv</a
+				>
+			</div>
+			<br />
+			<div>
+				Gihub repo:
+				<a href="https://github.com/carburante2022/webc"
+					>https://github.com/carburante2022/webc</a
+				>
+			</div>
 		</div>
 		<script>
 			// create a dataSet with groups
@@ -92,13 +122,13 @@
 
 			readTextFile("./../items.json", function (text) {
 				var data = JSON.parse(text);
-				console.log(data);
+				//console.log(data);
 				graph2d.setItems(data);
 			});
 
 			readTextFile("./../groups.json", function (text) {
 				var data = JSON.parse(text);
-				console.log(data);
+				//console.log(data);
 				graph2d.setGroups(data);
 			});
 
