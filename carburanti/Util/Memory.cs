@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace carburanti.Util
 {
-    internal class Memory
+    internal static class Memory
     {
         public static Stream GenerateStreamFromString(string s)
         {

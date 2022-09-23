@@ -28,12 +28,10 @@ namespace carburanti.Model
 
         internal void Aggiungi(Prezzo prezzo)
         {
-            bool inserito = InseritoBool(prezzo);
-            if (!inserito)
-            {
-                this.prezzi ??= new List<Prezzo>();
-                this.prezzi.Add(prezzo);
-            }
+            var inserito = InseritoBool(prezzo);
+            if (inserito) return;
+            this.prezzi ??= new List<Prezzo>();
+            this.prezzi.Add(prezzo);
         }
 
         private bool InseritoBool(Prezzo prezzo)

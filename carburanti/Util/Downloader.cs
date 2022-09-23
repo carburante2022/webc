@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace carburanti.Util
 {
-    internal class Downloader
+    internal static class Downloader
     {
         public static string Download(string url)
         {
@@ -16,7 +16,7 @@ namespace carburanti.Util
             var t1 = client.GetAsync(uri);
             t1.Wait();
             var response = t1.Result;
-            MemoryStream stream = new MemoryStream();
+            var stream = new MemoryStream();
             response.Content.CopyToAsync(stream).Wait();
             var r = Encoding.UTF8.GetString(stream.ToArray());
             return r;

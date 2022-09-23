@@ -12,33 +12,30 @@ using carburanti.Model.Dates;
 
 namespace carburanti.Util.Scraper
 {
-    internal class CarburantiOpenDataScraper
+    internal static class CarburantiOpenDataScraper
     {
         public static void Download()
         {
-            string url = "https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv";
+            const string url = "https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv";
             var r = Util.Downloader.Download(url);
             var firstNewLine = r.IndexOf('\n');
-            var data = r.Substring(0, firstNewLine).Trim();
-            DateOnlyCustom dateOnly = GetDateEstratto(data);
-            var recorsString = r.Substring(firstNewLine).Trim();
+            var data = r[..firstNewLine].Trim();
+            var dateOnly = GetDateEstratto(data);
+            var recordsString = r[firstNewLine..].Trim();
 
-            var m = Util.Memory.GenerateStreamFromString(recorsString);
+            var m = Util.Memory.GenerateStreamFromString(recordsString);
 
-            using (var reader = new StreamReader(m))
-            using (var csv = new CsvReader(reader, CultureInfo.GetCultureInfoByIetfLanguageTag("it")))
+            using var reader = new StreamReader(m);
+            using var csv = new CsvReader(reader, CultureInfo.GetCultureInfoByIetfLanguageTag("it"));
+            var records = csv.GetRecords<dynamic>().ToList();
+            ;
+            var prezziGiorno = new PrezziGiorno(dateOnly);
+            foreach (var prezzo in records.Select(record => new Prezzo(record)))
             {
-                List<dynamic> records = csv.GetRecords<dynamic>().ToList();
-                ;
-                PrezziGiorno prezziGiorno = new PrezziGiorno(dateOnly);
-                foreach (var record in records)
-                {
-                    Prezzo prezzo = new(record);
-                    prezziGiorno.Aggiungi(prezzo);
-                }
-                VariabiliGlobali.VarGlob.allData ??= new AllData();
-                VariabiliGlobali.VarGlob.allData.AggiornaPrezzi(dateOnly, prezziGiorno);
+                prezziGiorno.Aggiungi(prezzo);
             }
+            VariabiliGlobali.VarGlob.allData ??= new AllData();
+            VariabiliGlobali.VarGlob.allData.AggiornaPrezzi(dateOnly, prezziGiorno);
         }
 
         private static DateOnlyCustom GetDateEstratto(string data)
