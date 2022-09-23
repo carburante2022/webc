@@ -7,9 +7,9 @@ namespace carburanti.Model.Graph
     [JsonObject(MemberSerialization.Fields)]
     internal class Graph
     {
-        private AllData allData;
-        private Items items = new Items();
-        private Groups groups = new Groups();
+        private readonly AllData allData;
+        private readonly Items items = new();
+        private readonly Groups groups = new();
 
         public Graph(AllData allData)
         {
@@ -28,14 +28,15 @@ namespace carburanti.Model.Graph
                 {
                     foreach (Prezzo i2 in i.Value.prezzi)
                     {
-                        int groupId = GetGroupAndCreateIt(i2);
-                        this.items.Aggiungi(i2, groupId);
+                        int? groupId = GetGroupAndCreateIt(i2);
+                        if (groupId != null)
+                            this.items.Aggiungi(i2, groupId.Value);
                     }
                 }
             }
         }
 
-        private int GetGroupAndCreateIt(Prezzo i2)
+        private int? GetGroupAndCreateIt(Prezzo i2)
         {
             this.groups.list ??= new List<GroupGraph>();
             foreach (var x in this.groups.list)
@@ -46,7 +47,10 @@ namespace carburanti.Model.Graph
                 }
             }
 
-            GroupGraph groupGraph = this.groups.GetNewGroup(i2);
+            GroupGraph? groupGraph = this.groups.GetNewGroup(i2);
+            if (groupGraph == null)
+                return null;
+
             return groupGraph.id;
         }
 
