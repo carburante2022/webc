@@ -16,17 +16,15 @@ namespace carburanti.Model.Dates
             return sourceType == typeof(string) || base.CanConvertFrom(context, sourceType);
         }
 
-        public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
+        public override object? ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
         {
-            var casted = value as string;
-            return casted != null
+            return value is string casted
                 ? new DateOnlyCustom(casted)
                 : base.ConvertFrom(context, culture, value);
         }
-        public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
+        public override object? ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type? destinationType)
         {
-            var casted = value as DateOnlyCustom;
-            if (casted == null || destinationType == null)
+            if (value is not DateOnlyCustom casted || destinationType == null)
                 return null;
 
             var s = casted.ToString();

@@ -32,7 +32,7 @@ namespace carburanti.Model.Dates
             this.day = Convert.ToInt32(s[2]);
         }
 
-        public override string ToString() {
+        public override string? ToString() {
             return this.year.ToString() + "-" + this.month.ToString() + "-" + this.day.ToString();
         }
 

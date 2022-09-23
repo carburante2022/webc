@@ -17,15 +17,12 @@ namespace carburanti.Model.Graph
         {
             this.list ??= new List<GroupGraph>();
 
-            int max = this.list.Count == 0 ? 1 : (this.list.Max(x => x.id) + 1);
+            var max = this.list.Count == 0 ? 1 : (this.list.Max(x => x.id) + 1);
 
-            if (i2.dtComu != null)
-            {
-                GroupGraph groupGraph = new(id: max, idImpianto: i2.idImpianto, i2.descCarburante, i2.isSelf);
-                this.list.Add(groupGraph);
-                return groupGraph;
-            }
-            return null;
+            if (i2.dtComu == null) return null;
+            GroupGraph groupGraph = new(id: max, idImpianto: i2.idImpianto, i2.descCarburante, i2.isSelf);
+            this.list.Add(groupGraph);
+            return groupGraph;
         }
     }
 }

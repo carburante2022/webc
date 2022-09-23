@@ -30,10 +30,7 @@ namespace carburanti.Model.Graph
         internal Dictionary<string, Dictionary<bool, Prezzo>>? GetStats(DateOnlyCustom key)
         {
             this.stats ??= new Dictionary<DateOnlyCustom, StatSingle>();
-            if (this.stats.ContainsKey(key))
-                return this.stats[key].GetStat();
-
-            return null;
+            return this.stats.ContainsKey(key) ? this.stats[key].GetStat() : null;
         }
 
    

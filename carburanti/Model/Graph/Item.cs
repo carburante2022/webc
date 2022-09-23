@@ -9,7 +9,7 @@ namespace carburanti.Model.Graph
         public string? x;
         public decimal y;
         public int group;
-        public bool valid = false;
+        public bool valid;
 
         public Item()
         {

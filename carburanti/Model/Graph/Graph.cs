@@ -24,37 +24,27 @@ namespace carburanti.Model.Graph
             if (allData.prezziGiornalieri == null)
                 return;
 
-            foreach (KeyValuePair<DateOnlyCustom, PrezziGiorno> i in allData.prezziGiornalieri)
+            foreach (var i in allData.prezziGiornalieri.Where(i => i.Value.prezzi != null))
             {
-                if (i.Value.prezzi != null)
-                {
-                    StatsAll.Calcola(i);
-                }
+                StatsAll.Calcola(i);
             }
 
 
 
-            foreach (KeyValuePair<DateOnlyCustom, PrezziGiorno> i7 in allData.prezziGiornalieri)
+            foreach (var i7 in allData.prezziGiornalieri)
             {
                 var x8 = StatsAll.GetStats(i7.Key);
-                if (x8 != null)
+                if (x8 == null) continue;
+                foreach (var i in x8 )
                 {
-                    foreach (KeyValuePair<string, Dictionary<bool, Prezzo>> i in x8 )
+                    foreach (var i3 in i.Value)
                     {
-                        if (i.Value != null)
-                        {
-                            foreach (KeyValuePair<bool, Prezzo> i3 in i.Value)
-                            {
-                                var i2 = i3.Value;
+                        var i2 = i3.Value;
 
-                                if (string.IsNullOrEmpty(i2.descCarburante) == false && i2.isSelf != null)
-                                {
-                                    int? groupId = GetGroupAndCreateIt(i2);
-                                    if (groupId != null)
-                                        this.items.Aggiungi(i2, groupId.Value, i7.Key);
-                                }
-                            }
-                        }
+                        if (string.IsNullOrEmpty(i2.descCarburante) != false || i2.isSelf == null) continue;
+                        var groupId = GetGroupAndCreateIt(i2);
+                        if (groupId != null)
+                            this.items.Aggiungi(i2, groupId.Value, i7.Key);
                     }
                 }
             }
@@ -65,19 +55,14 @@ namespace carburanti.Model.Graph
         private int? GetGroupAndCreateIt(Prezzo i2)
         {
             this.groups.list ??= new List<GroupGraph>();
-            foreach (GroupGraph x in this.groups.list)
+            foreach (var x in this.groups.list.Where(x => i2.descCarburante == x.descCarburante && i2.isSelf == x.isSelf))
             {
-                if (i2.descCarburante == x.descCarburante && i2.isSelf == x.isSelf)
-                {
-                    return x.id;
-                }
+                return x.id;
             }
 
-            GroupGraph? groupGraph = this.groups.GetNewGroup(i2);
-            if (groupGraph == null)
-                return null;
+            var groupGraph = this.groups.GetNewGroup(i2);
 
-            return groupGraph.id;
+            return groupGraph?.id;
         }
 
         internal Groups GetGroups()

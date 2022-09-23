@@ -7,86 +7,77 @@ namespace carburanti.Model.Graph
     [JsonObject(MemberSerialization.Fields)]
     public class StatSingle
     {
-        public  Dictionary<string, Dictionary<bool, List<Prezzo>>> itemsGrouped = new();
+        public  Dictionary<string, Dictionary<bool, List<Prezzo>?>> itemsGrouped = new();
         public  Dictionary<string, Dictionary<bool, Prezzo>> summary = new();
 
 
         internal void Calcola(KeyValuePair<DateOnlyCustom, PrezziGiorno> i10)
         {
-            foreach (Prezzo i2 in i10.Value.prezzi)
-            {
-                if (string.IsNullOrEmpty(i2.descCarburante) == false && i2.isSelf != null)
+            var valuePrezzi = i10.Value.prezzi;
+            if (valuePrezzi != null)
+                foreach (var i2 in valuePrezzi.Where(i2 => string.IsNullOrEmpty(i2.descCarburante) == false && i2.isSelf != null))
                 {
-
-
-                    if (!itemsGrouped.ContainsKey(i2.descCarburante))
+                    if (i2.descCarburante != null && !itemsGrouped.ContainsKey(i2.descCarburante))
                     {
-                        itemsGrouped[i2.descCarburante] = new();
+                        itemsGrouped[i2.descCarburante] = new Dictionary<bool, List<Prezzo>?>();
                     }
 
-                    if (!itemsGrouped[i2.descCarburante].ContainsKey(i2.isSelf.Value))
+                    if (i2.isSelf != null && i2.descCarburante != null && !itemsGrouped[i2.descCarburante].ContainsKey(i2.isSelf.Value))
                     {
                         itemsGrouped[i2.descCarburante][i2.isSelf.Value] = new List<Prezzo>();
                     }
 
-                    itemsGrouped[i2.descCarburante][i2.isSelf.Value].Add(i2);
-
-
-
+                    if (i2.descCarburante == null || i2.isSelf == null) continue;
+                    var prezzos = itemsGrouped[i2.descCarburante][i2.isSelf.Value];
+                    prezzos?.Add(i2);
                 }
-            }
 
-            foreach (KeyValuePair<string, Dictionary<bool, List<Prezzo>>> i in itemsGrouped)
+            foreach (var i in itemsGrouped)
             {
-                if (i.Value != null)
+                foreach (var i3 in i.Value)
                 {
-                    foreach (KeyValuePair<bool, List<Prezzo>> i3 in i.Value)
+                    List<Prezzo>? i2 = i3.Value;
+                    decimal? avg = MediaPrezzo(i2);
+
+                    if (avg == null) continue;
+                    var prezzo = i2[0];
+                    var prezzoDescCarburante = prezzo.descCarburante;
+                    if (prezzoDescCarburante != null && !summary.ContainsKey(prezzoDescCarburante))
                     {
-                        List<Prezzo> i2 = i3.Value;
-                        decimal? avg = MediaPrezzo(i2);
-
-                        if (avg != null)
-                        {
-
-
-                            if (!summary.ContainsKey(i2[0].descCarburante))
-                            {
-                                summary[i2[0].descCarburante] = new();
-                            }
-
-                            if (!summary[i2[0].descCarburante].ContainsKey(i2[0].isSelf.Value))
-                            {
-                                Prezzo p = new()
-                                {
-                                    descCarburante = i2[0].descCarburante,
-                                    prezzo = avg.Value,
-                                    isSelf = i2[0].isSelf,
-                                    idImpianto = i2[0].idImpianto,
-                                    dtComu = i2[0].dtComu,
-                                    ttComu = i2[0].ttComu
-                                };
-                                summary[i2[0].descCarburante][i2[0].isSelf.Value] = p;
-                            }
-                        }
+                        summary[prezzoDescCarburante] = new Dictionary<bool, Prezzo>();
                     }
+
+                    var prezzoIsSelf = prezzo.isSelf;
+                    if (prezzoIsSelf == null || prezzoDescCarburante == null ||
+                        summary[prezzoDescCarburante].ContainsKey(prezzoIsSelf.Value)) continue;
+                    
+                    Prezzo p = new()
+                    {
+                        descCarburante = prezzoDescCarburante,
+                        prezzo = avg.Value,
+                        isSelf = prezzoIsSelf,
+                        idImpianto = prezzo.idImpianto,
+                        dtComu = prezzo.dtComu,
+                        ttComu = prezzo.ttComu
+                    };
+                    summary[prezzoDescCarburante][prezzoIsSelf.Value] = p;
                 }
             }
         }
 
-        private static decimal? MediaPrezzo(List<Prezzo> i2)
+        private static decimal? MediaPrezzo(IReadOnlyCollection<Prezzo>? i2)
         {
             if (i2 == null || i2.Count == 0)
                 return null;
 
             decimal total = 0;
-            int count = 0;
-            foreach (var i3 in i2)
+            var count = 0;
+            foreach (var i3 in i2.Where(i3 => i3.prezzo != null))
             {
-                if (i3.prezzo != null)
-                {
-                    total += i3.prezzo.Value;
-                    count++;
-                }
+                if (i3.prezzo == null) continue;
+                
+                total += i3.prezzo.Value;
+                count++;
             }
             return total / count;
         }
