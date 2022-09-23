@@ -18,5 +18,10 @@ namespace carburanti.Model
             this.prezziGiornalieri ??= new Dictionary<DateOnly, PrezziGiorno>();
             this.prezziGiornalieri[dateOnly] = prezziGiorno;
         }
+
+        internal Graph.Graph GetGraph()
+        {
+            return new Graph.Graph(this);
+        }
     }
 }

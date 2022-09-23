@@ -9,3 +9,5 @@ carburanti.Util.Scraper.CarburantiOpenDataScraper.Download();
 
 string s = Newtonsoft.Json.JsonConvert.SerializeObject(carburanti.VariabiliGlobali.VarGlob.allData);
 File.WriteAllText("data.json", s);
+
+carburanti.Util.Graph.Write();
