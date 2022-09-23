@@ -16,7 +16,7 @@ namespace carburanti.Model.Graph
 
         }
 
-        public Item(Prezzo i2, int groupId)
+        public Item(Prezzo i2, int groupId, Dates.DateOnlyCustom dtComu)
         {
             this.group = groupId;
             if (i2.dtComu == null || i2.prezzo == null)
@@ -24,7 +24,7 @@ namespace carburanti.Model.Graph
             else
             {
                 this.valid = true;
-                this.x = i2.dtComu.ToString();
+                this.x = dtComu.ToString();
                 this.y = i2.prezzo.Value;
             }
         }
