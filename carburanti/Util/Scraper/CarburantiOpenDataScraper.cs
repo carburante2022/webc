@@ -8,6 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using carburanti.Model;
+using carburanti.Model.Dates;
 
 namespace carburanti.Util.Scraper
 {
@@ -19,7 +20,7 @@ namespace carburanti.Util.Scraper
             var r = Util.Downloader.Download(url);
             var firstNewLine = r.IndexOf('\n');
             var data = r.Substring(0, firstNewLine).Trim();
-            DateOnly dateOnly = GetDateEstratto(data);
+            DateOnlyCustom dateOnly = GetDateEstratto(data);
             var recorsString = r.Substring(firstNewLine).Trim();
 
             var m = Util.Memory.GenerateStreamFromString(recorsString);
@@ -40,13 +41,14 @@ namespace carburanti.Util.Scraper
             }
         }
 
-        private static DateOnly GetDateEstratto(string data)
+        private static DateOnlyCustom GetDateEstratto(string data)
         {
             ;
             var s = data.Split(' ');
             var s2 = s[2].Split("-");
 
-            return new DateOnly(Convert.ToInt32(s2[0]), Convert.ToInt32(s2[1]), Convert.ToInt32(s2[2]));
+            var dt = new DateOnly(Convert.ToInt32(s2[0]), Convert.ToInt32(s2[1]), Convert.ToInt32(s2[2]));
+            return new DateOnlyCustom(dt);
         }
     }
 }
