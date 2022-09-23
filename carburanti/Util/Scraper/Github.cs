@@ -10,7 +10,7 @@ namespace carburanti.Util.Scraper
     {
         internal static void Download()
         {
-            string json = carburanti.Util.Downloader.Download("https://github.com/carburante2022/webc/data.json");
+            string json = carburanti.Util.Downloader.Download("https://raw.githubusercontent.com/carburante2022/webc/main/data.json");
             
             if (!json.Contains("<!DOCTYPE html>"))
             {
