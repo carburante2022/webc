@@ -59,7 +59,7 @@ namespace carburanti.Model.Graph
                         prezzo = avg.Value,
                         isSelf = prezzoIsSelf,
                         idImpianto = prezzo.idImpianto,
-                        dtComu = prezzo.dtComu,
+                        dtComu = i10.Key,
                         ttComu = prezzo.ttComu
                     };
                     summary[prezzoDescCarburante][prezzoIsSelf.Value] = p;
