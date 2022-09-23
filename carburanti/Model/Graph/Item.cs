@@ -24,7 +24,7 @@ namespace carburanti.Model.Graph
             else
             {
                 this.valid = true;
-                this.x = i2.dtComu.Value.Year.ToString() + "-" + i2.dtComu.Value.Month.ToString() + "-" + i2.dtComu.Value.Day.ToString();
+                this.x = i2.dtComu.ToString();
                 this.y = i2.prezzo.Value;
             }
         }

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using carburanti.Model.Dates;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,11 @@ namespace carburanti.Model
     [JsonObject(MemberSerialization.Fields)]
     public class AllData
     {
-        public Dictionary<DateOnly, PrezziGiorno>? prezziGiornalieri;
+        public Dictionary<DateOnlyCustom, PrezziGiorno>? prezziGiornalieri;
 
-        internal void AggiornaPrezzi(DateOnly dateOnly, PrezziGiorno prezziGiorno)
+        internal void AggiornaPrezzi(DateOnlyCustom dateOnly, PrezziGiorno prezziGiorno)
         {
-            this.prezziGiornalieri ??= new Dictionary<DateOnly, PrezziGiorno>();
+            this.prezziGiornalieri ??= new Dictionary<DateOnlyCustom, PrezziGiorno>();
             this.prezziGiornalieri[dateOnly] = prezziGiorno;
         }
 

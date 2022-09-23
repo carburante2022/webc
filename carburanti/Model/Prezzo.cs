@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using carburanti.Model.Dates;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -16,7 +17,8 @@ namespace carburanti.Model
         public string? descCarburante;
         public decimal? prezzo;
         public bool? isSelf;
-        public DateOnly? dtComu;
+        public DateOnlyCustom? dtComu;
+        private DateOnly dateOnly;
         public TimeOnly? ttComu;
 
         public Prezzo(dynamic record)
@@ -36,7 +38,8 @@ namespace carburanti.Model
             var d3 = d2[0].Split("/");
             var d4 = d2[1].Split(":");
             ;
-            this.dtComu = new DateOnly(Convert.ToInt32(d3[2]), Convert.ToInt32(d3[1]), Convert.ToInt32(d3[0]));
+            this.dateOnly = new DateOnly(Convert.ToInt32(d3[2]), Convert.ToInt32(d3[1]), Convert.ToInt32(d3[0]));
+            this.dtComu = new DateOnlyCustom(dateOnly);
             this.ttComu = new TimeOnly(Convert.ToInt32(d4[0]), Convert.ToInt32(d4[1]), Convert.ToInt32(d4[2]));
             ;
         }

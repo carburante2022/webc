@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using carburanti.Model.Dates;
+using Newtonsoft.Json;
 
 namespace carburanti.Model.Graph
 {
@@ -21,7 +22,7 @@ namespace carburanti.Model.Graph
             if (allData.prezziGiornalieri == null)
                 return;
 
-            foreach (KeyValuePair<DateOnly, PrezziGiorno> i in allData.prezziGiornalieri)
+            foreach (KeyValuePair<DateOnlyCustom, PrezziGiorno> i in allData.prezziGiornalieri)
             {
                 if (i.Value.prezzi != null)
                 {

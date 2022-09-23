@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using carburanti.Model.Dates;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,14 @@ namespace carburanti.Model
     public class PrezziGiorno
     {
         public List<Prezzo>? prezzi;
-        public DateOnly dateOnly;
+        public DateOnlyCustom? dateOnly;
 
         public PrezziGiorno()
         {
 
         }
 
-        public PrezziGiorno(DateOnly dateOnly)
+        public PrezziGiorno(DateOnlyCustom dateOnly)
         {
             this.dateOnly = dateOnly;
             this.prezzi = new List<Prezzo>();
