@@ -21,9 +21,24 @@ namespace carburanti.Model.Graph
             this.idInt = id;
             this.id = idInt.ToString();
             this.idImpianto = idImpianto;
-            this.content = idImpianto.ToString() ?? "xxx";
             this.descCarburante = descCarburante;
             this.isSelf = isSelf;
+            this.content = GetContent();
+        }
+
+        private string? GetContent()
+        {
+            var r = "";
+
+            if (this.isSelf != null)
+                r += this.isSelf.Value ? "[self]" : "[noself]";
+            r += " ";
+
+            if (!string.IsNullOrEmpty(descCarburante))
+                r += descCarburante;
+
+            r = r.Trim();
+            return string.IsNullOrEmpty(r) ? "xxx" : r;
         }
     }
 }
