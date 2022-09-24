@@ -120,13 +120,13 @@
 			};
 			var graph2d = new vis.Graph2d(container, items2, groups, options);
 
-			readTextFile("./../items.json", function (text) {
+			readTextFile("./../data/items.json", function (text) {
 				var data = JSON.parse(text);
 				//console.log(data);
 				graph2d.setItems(data);
 			});
 
-			readTextFile("./../groups.json", function (text) {
+			readTextFile("./../data/groups.json", function (text) {
 				var data = JSON.parse(text);
 				//console.log(data);
 				graph2d.setGroups(data);
