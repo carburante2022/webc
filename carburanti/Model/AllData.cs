@@ -1,23 +1,26 @@
-﻿using carburanti.Model.Dates;
+﻿#region
+
+using carburanti.Model.Dates;
 using Newtonsoft.Json;
 
-namespace carburanti.Model
+#endregion
+
+namespace carburanti.Model;
+
+[Serializable]
+[JsonObject(MemberSerialization.Fields)]
+public class AllData
 {
-    [Serializable]
-    [JsonObject(MemberSerialization.Fields)]
-    public class AllData
+    public Dictionary<DateOnlyCustom, PrezziGiorno>? prezziGiornalieri;
+
+    internal void AggiornaPrezzi(DateOnlyCustom dateOnly, PrezziGiorno prezziGiorno)
     {
-        public Dictionary<DateOnlyCustom, PrezziGiorno>? prezziGiornalieri;
+        prezziGiornalieri ??= new Dictionary<DateOnlyCustom, PrezziGiorno>();
+        prezziGiornalieri[dateOnly] = prezziGiorno;
+    }
 
-        internal void AggiornaPrezzi(DateOnlyCustom dateOnly, PrezziGiorno prezziGiorno)
-        {
-            this.prezziGiornalieri ??= new Dictionary<DateOnlyCustom, PrezziGiorno>();
-            this.prezziGiornalieri[dateOnly] = prezziGiorno;
-        }
-
-        internal Graph.Graph GetGraph()
-        {
-            return new Graph.Graph(this);
-        }
+    internal Graph.Graph GetGraph()
+    {
+        return new Graph.Graph(this);
     }
 }

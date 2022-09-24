@@ -1,13 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿#region
+
+using carburanti.Util;
+using carburanti.Util.Scraper;
+using carburanti.VariabiliGlobali;
+using Newtonsoft.Json;
+
+#endregion
+
 Console.WriteLine("Hello, World!");
 
 
+Github.Download();
 
-carburanti.Util.Scraper.Github.Download();
+CarburantiOpenDataScraper.Download();
 
-carburanti.Util.Scraper.CarburantiOpenDataScraper.Download();
-
-var s = Newtonsoft.Json.JsonConvert.SerializeObject(carburanti.VariabiliGlobali.VarGlob.allData);
+var s = JsonConvert.SerializeObject(VarGlob.allData);
 File.WriteAllText("data/data.json", s);
 
-carburanti.Util.Graph.Write();
+Graph.Write();

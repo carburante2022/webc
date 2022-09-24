@@ -1,12 +1,18 @@
-﻿namespace carburanti.Util
+﻿#region
+
+using carburanti.VariabiliGlobali;
+using Newtonsoft.Json;
+
+#endregion
+
+namespace carburanti.Util;
+
+internal static class Graph
 {
-    internal static class Graph
+    internal static void Write()
     {
-        internal static void Write()
-        {
-            var graph = VariabiliGlobali.VarGlob.allData.GetGraph();
-            File.WriteAllText("data/items.json", Newtonsoft.Json.JsonConvert.SerializeObject(graph.GetItems().items));
-            File.WriteAllText("data/groups.json", Newtonsoft.Json.JsonConvert.SerializeObject(graph.GetGroups().list));
-        }
+        var graph = VarGlob.allData.GetGraph();
+        File.WriteAllText("data/items.json", JsonConvert.SerializeObject(graph.GetItems().items));
+        File.WriteAllText("data/groups.json", JsonConvert.SerializeObject(graph.GetGroups().list));
     }
 }

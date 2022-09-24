@@ -1,15 +1,14 @@
-﻿namespace carburanti.Util
+﻿namespace carburanti.Util;
+
+internal static class Memory
 {
-    internal static class Memory
+    public static Stream GenerateStreamFromString(string s)
     {
-        public static Stream GenerateStreamFromString(string s)
-        {
-            var stream = new MemoryStream();
-            var writer = new StreamWriter(stream);
-            writer.Write(s);
-            writer.Flush();
-            stream.Position = 0;
-            return stream;
-        }
+        var stream = new MemoryStream();
+        var writer = new StreamWriter(stream);
+        writer.Write(s);
+        writer.Flush();
+        stream.Position = 0;
+        return stream;
     }
 }

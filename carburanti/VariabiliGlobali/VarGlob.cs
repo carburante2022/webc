@@ -1,9 +1,12 @@
-﻿using carburanti.Model;
+﻿#region
 
-namespace carburanti.VariabiliGlobali
+using carburanti.Model;
+
+#endregion
+
+namespace carburanti.VariabiliGlobali;
+
+public static class VarGlob
 {
-    public static class VarGlob
-    {
-        public static AllData allData = new AllData();
-    }
+    public static AllData allData = new();
 }

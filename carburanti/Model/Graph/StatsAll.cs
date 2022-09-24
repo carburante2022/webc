@@ -1,33 +1,29 @@
-﻿using carburanti.Model.Dates;
+﻿#region
+
+using carburanti.Model.Dates;
 using Newtonsoft.Json;
 
-namespace carburanti.Model.Graph
+#endregion
+
+namespace carburanti.Model.Graph;
+
+[Serializable]
+[JsonObject(MemberSerialization.Fields)]
+internal class StatsAll
 {
-    [Serializable]
-    [JsonObject(MemberSerialization.Fields)]
-    internal class StatsAll
+    public Dictionary<DateOnlyCustom, StatSingle>? stats;
+
+    internal void Calcola(KeyValuePair<DateOnlyCustom, PrezziGiorno> i)
     {
-        public Dictionary<DateOnlyCustom, StatSingle>? stats;
+        stats ??= new Dictionary<DateOnlyCustom, StatSingle>();
+        if (!stats.ContainsKey(i.Key)) stats[i.Key] = new StatSingle();
 
-        internal void Calcola(KeyValuePair<DateOnlyCustom, PrezziGiorno> i)
-        {
-            stats ??= new Dictionary<DateOnlyCustom, StatSingle>();
-            if (!stats.ContainsKey(i.Key))
-            {
-                stats[i.Key] = new StatSingle();
-            }
+        stats[i.Key].Calcola(i);
+    }
 
-            stats[i.Key].Calcola(i);
-
-            
-        }
-
-        internal Dictionary<string, Dictionary<bool, Prezzo>>? GetStats(DateOnlyCustom key)
-        {
-            this.stats ??= new Dictionary<DateOnlyCustom, StatSingle>();
-            return this.stats.ContainsKey(key) ? this.stats[key].GetStat() : null;
-        }
-
-   
+    internal Dictionary<string, Dictionary<bool, Prezzo>>? GetStats(DateOnlyCustom key)
+    {
+        stats ??= new Dictionary<DateOnlyCustom, StatSingle>();
+        return stats.ContainsKey(key) ? stats[key].GetStat() : null;
     }
 }
