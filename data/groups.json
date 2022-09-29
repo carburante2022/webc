@@ -502,5 +502,13 @@
     "idImpianto": 31826,
     "idInt": 63,
     "isSelf": true
+  },
+  {
+    "content": "[noself] F101",
+    "descCarburante": "F101",
+    "id": "64",
+    "idImpianto": 5077,
+    "idInt": 64,
+    "isSelf": false
   }
 ]
