@@ -31,9 +31,21 @@ public class DateOnlyCustom
         day = Convert.ToInt32(s[2]);
     }
 
+    public DateOnlyCustom(DateTime dateOnly)
+    {
+        year = dateOnly.Year;
+        month = dateOnly.Month;
+        day = dateOnly.Day;
+    }
+
     public override string ToString()
     {
         return year + "-" + month + "-" + day;
+    }
+
+    public string ToString(string sep)
+    {
+        return year + sep + month + sep + day;
     }
 
     public override bool Equals(object? obj)

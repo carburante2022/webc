@@ -23,4 +23,20 @@ public class AllData
     {
         return new Graph.Graph(this);
     }
+
+    public Dictionary<DateOnlyCustom, AllData> GetDatasSplittedInDays()
+    {
+        var r = new Dictionary<DateOnlyCustom, AllData>();
+        if (prezziGiornalieri == null)
+            return r;
+        
+        foreach (var key in prezziGiornalieri.Keys)
+        {
+            var x = new AllData();
+            x.AggiornaPrezzi(key, prezziGiornalieri[key]);
+            r[key] = x;
+        }
+
+        return r;
+    }
 }

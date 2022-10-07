@@ -14,7 +14,8 @@ Github.Download();
 
 CarburantiOpenDataScraper.Download();
 
-var s = JsonConvert.SerializeObject(VarGlob.allData, Formatting.Indented);
-File.WriteAllText("data/data.json", s);
+FileSerializationUtil.WriteData();
+FileSerializationUtil.DeleteOldFiles();
+
 
 Graph.Write();
