@@ -30,7 +30,7 @@ internal class GroupGraph
         content = GetContent();
     }
 
-    private string? GetContent()
+    private string GetContent()
     {
         var r = "";
 

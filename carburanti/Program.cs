@@ -2,8 +2,6 @@
 
 using carburanti.Util;
 using carburanti.Util.Scraper;
-using carburanti.VariabiliGlobali;
-using Newtonsoft.Json;
 
 #endregion
 

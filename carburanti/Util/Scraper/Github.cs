@@ -14,20 +14,17 @@ internal static class Github
     internal static void Download()
     {
         Download2(""); // data.json is stored
-        
+
         var start = new DateTime(2022, 9, 22);
         var today = DateTime.Now;
         while (true)
         {
-            var dateOnlyCustom = (new DateOnlyCustom(start));
+            var dateOnlyCustom = new DateOnlyCustom(start);
             var s = dateOnlyCustom.ToString("_");
             Download2(s);
-            
-            if (start.Year == today.Year && start.Month == today.Month && start.Day == today.Day)
-            {
-                return;
-            }
-            
+
+            if (start.Year == today.Year && start.Month == today.Month && start.Day == today.Day) return;
+
             start = start.AddDays(1);
         }
     }

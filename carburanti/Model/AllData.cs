@@ -29,7 +29,7 @@ public class AllData
         var r = new Dictionary<DateOnlyCustom, AllData>();
         if (prezziGiornalieri == null)
             return r;
-        
+
         foreach (var key in prezziGiornalieri.Keys)
         {
             var x = new AllData();
