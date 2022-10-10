@@ -31,7 +31,7 @@ internal static class Github
 
     private static void Download2(string s)
     {
-        var path = "https://raw.githubusercontent.com/carburante2022/webc/main/data/data";
+        var path = "https://raw.githubusercontent.com/carburante2022/webc/main/data/data_";
         path += s;
         path += ".json";
         var json = Downloader.Download(path);
