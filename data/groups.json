@@ -363,7 +363,7 @@
     "content": "[noself] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
     "id": "46",
-    "idImpianto": 43369,
+    "idImpianto": 47640,
     "idInt": 46,
     "isSelf": false
   },
@@ -424,67 +424,67 @@
     "isSelf": false
   },
   {
-    "content": "[self] DieselMax",
-    "descCarburante": "DieselMax",
-    "id": "54",
-    "idImpianto": 31540,
-    "idInt": 54,
-    "isSelf": true
-  },
-  {
     "content": "[noself] Benzina Energy 98 ottani",
     "descCarburante": "Benzina Energy 98 ottani",
-    "id": "55",
+    "id": "54",
     "idImpianto": 34936,
-    "idInt": 55,
+    "idInt": 54,
     "isSelf": false
   },
   {
     "content": "[self] V-Power",
     "descCarburante": "V-Power",
-    "id": "56",
+    "id": "55",
     "idImpianto": 19053,
-    "idInt": 56,
+    "idInt": 55,
     "isSelf": true
   },
   {
     "content": "[self] Benzina 100 ottani",
     "descCarburante": "Benzina 100 ottani",
-    "id": "57",
+    "id": "56",
     "idImpianto": 46294,
-    "idInt": 57,
+    "idInt": 56,
     "isSelf": true
   },
   {
     "content": "[self] S-Diesel",
     "descCarburante": "S-Diesel",
-    "id": "58",
+    "id": "57",
     "idImpianto": 42694,
-    "idInt": 58,
+    "idInt": 57,
     "isSelf": true
   },
   {
     "content": "[noself] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
-    "id": "59",
+    "id": "58",
     "idImpianto": 54071,
-    "idInt": 59,
+    "idInt": 58,
     "isSelf": false
   },
   {
     "content": "[self] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
-    "id": "60",
+    "id": "59",
     "idImpianto": 17814,
-    "idInt": 60,
+    "idInt": 59,
     "isSelf": true
   },
   {
     "content": "[noself] SSP98",
     "descCarburante": "SSP98",
-    "id": "61",
+    "id": "60",
     "idImpianto": 10564,
-    "idInt": 61,
+    "idInt": 60,
     "isSelf": false
+  },
+  {
+    "content": "[self] DieselMax",
+    "descCarburante": "DieselMax",
+    "id": "61",
+    "idImpianto": 31540,
+    "idInt": 61,
+    "isSelf": true
   }
 ]
