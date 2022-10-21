@@ -368,28 +368,28 @@
     "isSelf": false
   },
   {
+    "content": "[self] Blu Diesel Alpino",
+    "descCarburante": "Blu Diesel Alpino",
+    "id": "47",
+    "idImpianto": 52336,
+    "idInt": 47,
+    "isSelf": true
+  },
+  {
     "content": "[self] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
-    "id": "47",
-    "idImpianto": 34840,
-    "idInt": 47,
+    "id": "48",
+    "idImpianto": 35467,
+    "idInt": 48,
     "isSelf": true
   },
   {
     "content": "[noself] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
-    "id": "48",
-    "idImpianto": 47640,
-    "idInt": 48,
-    "isSelf": false
-  },
-  {
-    "content": "[self] Blu Diesel Alpino",
-    "descCarburante": "Blu Diesel Alpino",
     "id": "49",
-    "idImpianto": 52336,
+    "idImpianto": 47640,
     "idInt": 49,
-    "isSelf": true
+    "isSelf": false
   },
   {
     "content": "[self] Gasolio Artico",
@@ -435,7 +435,7 @@
     "content": "[self] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
     "id": "55",
-    "idImpianto": 4866,
+    "idImpianto": 7151,
     "idInt": 55,
     "isSelf": true
   },
