@@ -211,7 +211,7 @@
     "content": "[self] Metano",
     "descCarburante": "Metano",
     "id": "27",
-    "idImpianto": 10584,
+    "idImpianto": 45880,
     "idInt": 27,
     "isSelf": true
   },
@@ -331,7 +331,7 @@
     "content": "[noself] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
     "id": "42",
-    "idImpianto": 39951,
+    "idImpianto": 49939,
     "idInt": 42,
     "isSelf": false
   },
@@ -363,7 +363,7 @@
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
     "id": "46",
-    "idImpianto": 51283,
+    "idImpianto": 54776,
     "idInt": 46,
     "isSelf": true
   },
