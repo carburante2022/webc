@@ -259,7 +259,7 @@
     "content": "[noself] Gasolio Premium",
     "descCarburante": "Gasolio Premium",
     "id": "33",
-    "idImpianto": 9338,
+    "idImpianto": 41004,
     "idInt": 33,
     "isSelf": false
   },
@@ -352,139 +352,139 @@
     "isSelf": false
   },
   {
-    "content": "[noself] L-GNC",
-    "descCarburante": "L-GNC",
-    "id": "45",
-    "idImpianto": 40315,
-    "idInt": 45,
-    "isSelf": false
-  },
-  {
-    "content": "[self] L-GNC",
-    "descCarburante": "L-GNC",
-    "id": "46",
-    "idImpianto": 54776,
-    "idInt": 46,
-    "isSelf": true
-  },
-  {
     "content": "[self] Blu Diesel Alpino",
     "descCarburante": "Blu Diesel Alpino",
-    "id": "47",
+    "id": "45",
     "idImpianto": 52336,
-    "idInt": 47,
+    "idInt": 45,
     "isSelf": true
   },
   {
     "content": "[self] V-Power",
     "descCarburante": "V-Power",
-    "id": "48",
+    "id": "46",
     "idImpianto": 31826,
-    "idInt": 48,
+    "idInt": 46,
     "isSelf": true
   },
   {
     "content": "[noself] GNL",
     "descCarburante": "GNL",
-    "id": "49",
+    "id": "47",
     "idImpianto": 52241,
-    "idInt": 49,
+    "idInt": 47,
     "isSelf": false
   },
   {
     "content": "[self] GNL",
     "descCarburante": "GNL",
-    "id": "50",
+    "id": "48",
     "idImpianto": 48161,
-    "idInt": 50,
+    "idInt": 48,
     "isSelf": true
   },
   {
     "content": "[self] Gasolio Artico",
     "descCarburante": "Gasolio Artico",
-    "id": "51",
+    "id": "49",
     "idImpianto": 52970,
-    "idInt": 51,
+    "idInt": 49,
     "isSelf": true
   },
   {
     "content": "[noself] Gasolio Artico",
     "descCarburante": "Gasolio Artico",
-    "id": "52",
+    "id": "50",
     "idImpianto": 45604,
-    "idInt": 52,
-    "isSelf": false
-  },
-  {
-    "content": "[noself] Benzina Energy 98 ottani",
-    "descCarburante": "Benzina Energy 98 ottani",
-    "id": "53",
-    "idImpianto": 34936,
-    "idInt": 53,
-    "isSelf": false
-  },
-  {
-    "content": "[noself] Gasolio Energy D",
-    "descCarburante": "Gasolio Energy D",
-    "id": "54",
-    "idImpianto": 25673,
-    "idInt": 54,
+    "idInt": 50,
     "isSelf": false
   },
   {
     "content": "[self] Gasolio Energy D",
     "descCarburante": "Gasolio Energy D",
-    "id": "55",
-    "idImpianto": 35203,
-    "idInt": 55,
+    "id": "51",
+    "idImpianto": 54014,
+    "idInt": 51,
     "isSelf": true
   },
   {
-    "content": "[self] S-Diesel",
-    "descCarburante": "S-Diesel",
-    "id": "56",
-    "idImpianto": 42694,
-    "idInt": 56,
-    "isSelf": true
+    "content": "[noself] Gasolio Energy D",
+    "descCarburante": "Gasolio Energy D",
+    "id": "52",
+    "idImpianto": 38640,
+    "idInt": 52,
+    "isSelf": false
   },
   {
     "content": "[self] Benzina 100 ottani",
     "descCarburante": "Benzina 100 ottani",
-    "id": "57",
+    "id": "53",
     "idImpianto": 46294,
-    "idInt": 57,
+    "idInt": 53,
+    "isSelf": true
+  },
+  {
+    "content": "[noself] L-GNC",
+    "descCarburante": "L-GNC",
+    "id": "54",
+    "idImpianto": 33534,
+    "idInt": 54,
+    "isSelf": false
+  },
+  {
+    "content": "[self] L-GNC",
+    "descCarburante": "L-GNC",
+    "id": "55",
+    "idImpianto": 51283,
+    "idInt": 55,
     "isSelf": true
   },
   {
     "content": "[self] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
-    "id": "58",
+    "id": "56",
     "idImpianto": 17814,
-    "idInt": 58,
+    "idInt": 56,
     "isSelf": true
   },
   {
     "content": "[noself] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
-    "id": "59",
+    "id": "57",
     "idImpianto": 54071,
-    "idInt": 59,
-    "isSelf": false
-  },
-  {
-    "content": "[noself] SSP98",
-    "descCarburante": "SSP98",
-    "id": "60",
-    "idImpianto": 10564,
-    "idInt": 60,
+    "idInt": 57,
     "isSelf": false
   },
   {
     "content": "[self] DieselMax",
     "descCarburante": "DieselMax",
-    "id": "61",
-    "idImpianto": 34964,
-    "idInt": 61,
+    "id": "58",
+    "idImpianto": 31916,
+    "idInt": 58,
     "isSelf": true
+  },
+  {
+    "content": "[noself] Benzina Energy 98 ottani",
+    "descCarburante": "Benzina Energy 98 ottani",
+    "id": "59",
+    "idImpianto": 34936,
+    "idInt": 59,
+    "isSelf": false
+  },
+  {
+    "content": "[self] S-Diesel",
+    "descCarburante": "S-Diesel",
+    "id": "60",
+    "idImpianto": 42694,
+    "idInt": 60,
+    "isSelf": true
+  },
+  {
+    "content": "[noself] SSP98",
+    "descCarburante": "SSP98",
+    "id": "61",
+    "idImpianto": 10564,
+    "idInt": 61,
+    "isSelf": false
   }
 ]
