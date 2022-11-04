@@ -331,7 +331,7 @@
     "content": "[noself] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
     "id": "42",
-    "idImpianto": 49939,
+    "idImpianto": 50691,
     "idInt": 42,
     "isSelf": false
   },
@@ -435,7 +435,7 @@
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
     "id": "55",
-    "idImpianto": 51283,
+    "idImpianto": 54776,
     "idInt": 55,
     "isSelf": true
   },
