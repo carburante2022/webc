@@ -35,7 +35,7 @@
     "content": "[self] Benzina WR 100",
     "descCarburante": "Benzina WR 100",
     "id": "5",
-    "idImpianto": 18295,
+    "idImpianto": 23248,
     "idInt": 5,
     "isSelf": true
   },
@@ -83,7 +83,7 @@
     "content": "[noself] Gasolio artico",
     "descCarburante": "Gasolio artico",
     "id": "11",
-    "idImpianto": 20097,
+    "idImpianto": 26143,
     "idInt": 11,
     "isSelf": false
   },
@@ -387,7 +387,7 @@
     "content": "[noself] L-GNC",
     "descCarburante": "L-GNC",
     "id": "49",
-    "idImpianto": 44517,
+    "idImpianto": 40315,
     "idInt": 49,
     "isSelf": false
   },
@@ -403,7 +403,7 @@
     "content": "[self] DieselMax",
     "descCarburante": "DieselMax",
     "id": "51",
-    "idImpianto": 31541,
+    "idImpianto": 37696,
     "idInt": 51,
     "isSelf": true
   },
