@@ -259,7 +259,7 @@
     "content": "[noself] Gasolio Premium",
     "descCarburante": "Gasolio Premium",
     "id": "33",
-    "idImpianto": 12844,
+    "idImpianto": 9338,
     "idInt": 33,
     "isSelf": false
   },
@@ -408,82 +408,82 @@
     "isSelf": false
   },
   {
-    "content": "[self] V-Power",
-    "descCarburante": "V-Power",
-    "id": "52",
-    "idImpianto": 31826,
-    "idInt": 52,
-    "isSelf": true
-  },
-  {
     "content": "[self] Blu Diesel Alpino",
     "descCarburante": "Blu Diesel Alpino",
-    "id": "53",
+    "id": "52",
     "idImpianto": 31991,
-    "idInt": 53,
+    "idInt": 52,
     "isSelf": true
   },
   {
     "content": "[noself] Excellium diesel",
     "descCarburante": "Excellium diesel",
-    "id": "54",
+    "id": "53",
     "idImpianto": 16637,
-    "idInt": 54,
+    "idInt": 53,
     "isSelf": false
   },
   {
     "content": "[self] Excellium diesel",
     "descCarburante": "Excellium diesel",
-    "id": "55",
+    "id": "54",
     "idImpianto": 26946,
-    "idInt": 55,
+    "idInt": 54,
     "isSelf": true
   },
   {
     "content": "[noself] SSP98",
     "descCarburante": "SSP98",
-    "id": "56",
+    "id": "55",
     "idImpianto": 10564,
-    "idInt": 56,
+    "idInt": 55,
     "isSelf": false
   },
   {
     "content": "[self] Benzina 100 ottani",
     "descCarburante": "Benzina 100 ottani",
-    "id": "57",
+    "id": "56",
     "idImpianto": 46294,
-    "idInt": 57,
+    "idInt": 56,
     "isSelf": true
   },
   {
-    "content": "[self] DieselMax",
-    "descCarburante": "DieselMax",
-    "id": "58",
-    "idImpianto": 31520,
-    "idInt": 58,
+    "content": "[self] V-Power",
+    "descCarburante": "V-Power",
+    "id": "57",
+    "idImpianto": 44998,
+    "idInt": 57,
     "isSelf": true
   },
   {
     "content": "[self] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
-    "id": "59",
-    "idImpianto": 19032,
-    "idInt": 59,
+    "id": "58",
+    "idImpianto": 50069,
+    "idInt": 58,
     "isSelf": true
   },
   {
     "content": "[noself] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
-    "id": "60",
+    "id": "59",
     "idImpianto": 54071,
-    "idInt": 60,
+    "idInt": 59,
     "isSelf": false
   },
   {
     "content": "[self] S-Diesel",
     "descCarburante": "S-Diesel",
-    "id": "61",
+    "id": "60",
     "idImpianto": 45456,
+    "idInt": 60,
+    "isSelf": true
+  },
+  {
+    "content": "[self] DieselMax",
+    "descCarburante": "DieselMax",
+    "id": "61",
+    "idImpianto": 31542,
     "idInt": 61,
     "isSelf": true
   }
