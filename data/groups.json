@@ -35,7 +35,7 @@
     "content": "[self] Benzina WR 100",
     "descCarburante": "Benzina WR 100",
     "id": "5",
-    "idImpianto": 18295,
+    "idImpianto": 39483,
     "idInt": 5,
     "isSelf": true
   },
@@ -331,7 +331,7 @@
     "content": "[noself] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
     "id": "42",
-    "idImpianto": 39951,
+    "idImpianto": 43369,
     "idInt": 42,
     "isSelf": false
   },
@@ -408,26 +408,26 @@
     "isSelf": false
   },
   {
-    "content": "[self] Blu Diesel Alpino",
-    "descCarburante": "Blu Diesel Alpino",
-    "id": "52",
-    "idImpianto": 31991,
-    "idInt": 52,
-    "isSelf": true
-  },
-  {
     "content": "[noself] Excellium diesel",
     "descCarburante": "Excellium diesel",
-    "id": "53",
+    "id": "52",
     "idImpianto": 16637,
-    "idInt": 53,
+    "idInt": 52,
     "isSelf": false
   },
   {
     "content": "[self] Excellium diesel",
     "descCarburante": "Excellium diesel",
-    "id": "54",
+    "id": "53",
     "idImpianto": 26946,
+    "idInt": 53,
+    "isSelf": true
+  },
+  {
+    "content": "[self] Blu Diesel Alpino",
+    "descCarburante": "Blu Diesel Alpino",
+    "id": "54",
+    "idImpianto": 52336,
     "idInt": 54,
     "isSelf": true
   },
