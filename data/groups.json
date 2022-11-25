@@ -83,7 +83,7 @@
     "content": "[noself] Gasolio artico",
     "descCarburante": "Gasolio artico",
     "id": "11",
-    "idImpianto": 20097,
+    "idImpianto": 29214,
     "idInt": 11,
     "isSelf": false
   },
@@ -211,7 +211,7 @@
     "content": "[self] Metano",
     "descCarburante": "Metano",
     "id": "27",
-    "idImpianto": 35428,
+    "idImpianto": 45880,
     "idInt": 27,
     "isSelf": true
   },
@@ -275,7 +275,7 @@
     "content": "[noself] Benzina Plus 98",
     "descCarburante": "Benzina Plus 98",
     "id": "35",
-    "idImpianto": 37121,
+    "idImpianto": 3992,
     "idInt": 35,
     "isSelf": false
   },
@@ -331,7 +331,7 @@
     "content": "[noself] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
     "id": "42",
-    "idImpianto": 43369,
+    "idImpianto": 49988,
     "idInt": 42,
     "isSelf": false
   },
@@ -363,25 +363,25 @@
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
     "id": "46",
-    "idImpianto": 54776,
+    "idImpianto": 51283,
     "idInt": 46,
+    "isSelf": true
+  },
+  {
+    "content": "[self] Excellium diesel",
+    "descCarburante": "Excellium diesel",
+    "id": "47",
+    "idImpianto": 26946,
+    "idInt": 47,
     "isSelf": true
   },
   {
     "content": "[noself] Excellium diesel",
     "descCarburante": "Excellium diesel",
-    "id": "47",
-    "idImpianto": 16637,
-    "idInt": 47,
-    "isSelf": false
-  },
-  {
-    "content": "[self] Excellium diesel",
-    "descCarburante": "Excellium diesel",
     "id": "48",
-    "idImpianto": 26946,
+    "idImpianto": 16637,
     "idInt": 48,
-    "isSelf": true
+    "isSelf": false
   },
   {
     "content": "[self] Blu Diesel Alpino",
@@ -427,7 +427,7 @@
     "content": "[self] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
     "id": "54",
-    "idImpianto": 4866,
+    "idImpianto": 7673,
     "idInt": 54,
     "isSelf": true
   },
@@ -451,7 +451,7 @@
     "content": "[self] DieselMax",
     "descCarburante": "DieselMax",
     "id": "57",
-    "idImpianto": 41112,
+    "idImpianto": 31542,
     "idInt": 57,
     "isSelf": true
   },
