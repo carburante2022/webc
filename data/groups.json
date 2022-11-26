@@ -486,5 +486,13 @@
     "idImpianto": 46294,
     "idInt": 61,
     "isSelf": true
+  },
+  {
+    "content": "[noself] Excellium Diesel",
+    "descCarburante": "Excellium Diesel",
+    "id": "62",
+    "idImpianto": 34443,
+    "idInt": 62,
+    "isSelf": false
   }
 ]
