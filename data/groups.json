@@ -83,7 +83,7 @@
     "content": "[noself] Gasolio artico",
     "descCarburante": "Gasolio artico",
     "id": "11",
-    "idImpianto": 20097,
+    "idImpianto": 26143,
     "idInt": 11,
     "isSelf": false
   },
@@ -371,7 +371,7 @@
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
     "id": "47",
-    "idImpianto": 54776,
+    "idImpianto": 51283,
     "idInt": 47,
     "isSelf": true
   },
@@ -475,7 +475,7 @@
     "content": "[self] DieselMax",
     "descCarburante": "DieselMax",
     "id": "60",
-    "idImpianto": 31449,
+    "idImpianto": 41112,
     "idInt": 60,
     "isSelf": true
   },
