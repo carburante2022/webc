@@ -35,7 +35,7 @@
     "content": "[self] Benzina WR 100",
     "descCarburante": "Benzina WR 100",
     "id": "5",
-    "idImpianto": 18295,
+    "idImpianto": 39483,
     "idInt": 5,
     "isSelf": true
   },
@@ -331,7 +331,7 @@
     "content": "[noself] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
     "id": "42",
-    "idImpianto": 39951,
+    "idImpianto": 3820,
     "idInt": 42,
     "isSelf": false
   },
@@ -371,7 +371,7 @@
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
     "id": "47",
-    "idImpianto": 51283,
+    "idImpianto": 54776,
     "idInt": 47,
     "isSelf": true
   },
@@ -472,19 +472,19 @@
     "isSelf": true
   },
   {
-    "content": "[self] DieselMax",
-    "descCarburante": "DieselMax",
-    "id": "60",
-    "idImpianto": 41112,
-    "idInt": 60,
-    "isSelf": true
-  },
-  {
     "content": "[noself] SSP98",
     "descCarburante": "SSP98",
-    "id": "61",
+    "id": "60",
     "idImpianto": 10564,
-    "idInt": 61,
+    "idInt": 60,
     "isSelf": false
+  },
+  {
+    "content": "[self] DieselMax",
+    "descCarburante": "DieselMax",
+    "id": "61",
+    "idImpianto": 41112,
+    "idInt": 61,
+    "isSelf": true
   }
 ]
