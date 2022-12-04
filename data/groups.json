@@ -478,5 +478,21 @@
     "idImpianto": 46294,
     "idInt": 60,
     "isSelf": true
+  },
+  {
+    "content": "[noself] Benzina Energy 98 ottani",
+    "descCarburante": "Benzina Energy 98 ottani",
+    "id": "61",
+    "idImpianto": 34936,
+    "idInt": 61,
+    "isSelf": false
+  },
+  {
+    "content": "[self] gasolio plus",
+    "descCarburante": "gasolio plus",
+    "id": "62",
+    "idImpianto": 46286,
+    "idInt": 62,
+    "isSelf": true
   }
 ]
