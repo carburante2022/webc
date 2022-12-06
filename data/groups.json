@@ -387,7 +387,7 @@
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
     "id": "49",
-    "idImpianto": 51283,
+    "idImpianto": 54776,
     "idInt": 49,
     "isSelf": true
   },
@@ -464,35 +464,35 @@
     "isSelf": true
   },
   {
-    "content": "[self] DieselMax",
-    "descCarburante": "DieselMax",
-    "id": "59",
-    "idImpianto": 41112,
-    "idInt": 59,
-    "isSelf": true
-  },
-  {
-    "content": "[noself] SSP98",
-    "descCarburante": "SSP98",
-    "id": "60",
-    "idImpianto": 10564,
-    "idInt": 60,
-    "isSelf": false
-  },
-  {
     "content": "[self] Benzina 100 ottani",
     "descCarburante": "Benzina 100 ottani",
-    "id": "61",
+    "id": "59",
     "idImpianto": 46294,
-    "idInt": 61,
+    "idInt": 59,
     "isSelf": true
   },
   {
     "content": "[self] Gasolio Plus",
     "descCarburante": "Gasolio Plus",
-    "id": "62",
+    "id": "60",
     "idImpianto": 46286,
-    "idInt": 62,
+    "idInt": 60,
     "isSelf": true
+  },
+  {
+    "content": "[self] DieselMax",
+    "descCarburante": "DieselMax",
+    "id": "61",
+    "idImpianto": 31449,
+    "idInt": 61,
+    "isSelf": true
+  },
+  {
+    "content": "[noself] SSP98",
+    "descCarburante": "SSP98",
+    "id": "62",
+    "idImpianto": 10564,
+    "idInt": 62,
+    "isSelf": false
   }
 ]
