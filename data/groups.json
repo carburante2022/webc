@@ -35,7 +35,7 @@
     "content": "[self] Benzina WR 100",
     "descCarburante": "Benzina WR 100",
     "id": "5",
-    "idImpianto": 18295,
+    "idImpianto": 39483,
     "idInt": 5,
     "isSelf": true
   },
@@ -275,7 +275,7 @@
     "content": "[noself] Benzina Plus 98",
     "descCarburante": "Benzina Plus 98",
     "id": "35",
-    "idImpianto": 3992,
+    "idImpianto": 37121,
     "idInt": 35,
     "isSelf": false
   },
@@ -480,19 +480,19 @@
     "isSelf": true
   },
   {
-    "content": "[self] DieselMax",
-    "descCarburante": "DieselMax",
-    "id": "61",
-    "idImpianto": 31449,
-    "idInt": 61,
-    "isSelf": true
-  },
-  {
     "content": "[noself] SSP98",
     "descCarburante": "SSP98",
-    "id": "62",
+    "id": "61",
     "idImpianto": 10564,
-    "idInt": 62,
+    "idInt": 61,
     "isSelf": false
+  },
+  {
+    "content": "[self] DieselMax",
+    "descCarburante": "DieselMax",
+    "id": "62",
+    "idImpianto": 31449,
+    "idInt": 62,
+    "isSelf": true
   }
 ]
