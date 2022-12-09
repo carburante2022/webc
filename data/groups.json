@@ -35,7 +35,7 @@
     "content": "[self] Benzina WR 100",
     "descCarburante": "Benzina WR 100",
     "id": "5",
-    "idImpianto": 16512,
+    "idImpianto": 23248,
     "idInt": 5,
     "isSelf": true
   },
@@ -259,7 +259,7 @@
     "content": "[noself] Gasolio Premium",
     "descCarburante": "Gasolio Premium",
     "id": "33",
-    "idImpianto": 53278,
+    "idImpianto": 26372,
     "idInt": 33,
     "isSelf": false
   },
@@ -307,7 +307,7 @@
     "content": "[noself] Benzina speciale",
     "descCarburante": "Benzina speciale",
     "id": "39",
-    "idImpianto": 43622,
+    "idImpianto": 34582,
     "idInt": 39,
     "isSelf": false
   },
@@ -331,7 +331,7 @@
     "content": "[self] GNL",
     "descCarburante": "GNL",
     "id": "42",
-    "idImpianto": 40675,
+    "idImpianto": 48161,
     "idInt": 42,
     "isSelf": true
   },
@@ -347,7 +347,7 @@
     "content": "[noself] Gasolio speciale",
     "descCarburante": "Gasolio speciale",
     "id": "44",
-    "idImpianto": 43369,
+    "idImpianto": 50691,
     "idInt": 44,
     "isSelf": false
   },
@@ -376,26 +376,26 @@
     "isSelf": true
   },
   {
+    "content": "[self] Blu Diesel Alpino",
+    "descCarburante": "Blu Diesel Alpino",
+    "id": "48",
+    "idImpianto": 52336,
+    "idInt": 48,
+    "isSelf": true
+  },
+  {
     "content": "[noself] L-GNC",
     "descCarburante": "L-GNC",
-    "id": "48",
-    "idImpianto": 49809,
-    "idInt": 48,
+    "id": "49",
+    "idImpianto": 49911,
+    "idInt": 49,
     "isSelf": false
   },
   {
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
-    "id": "49",
-    "idImpianto": 54776,
-    "idInt": 49,
-    "isSelf": true
-  },
-  {
-    "content": "[self] Blu Diesel Alpino",
-    "descCarburante": "Blu Diesel Alpino",
     "id": "50",
-    "idImpianto": 52336,
+    "idImpianto": 54776,
     "idInt": 50,
     "isSelf": true
   },
