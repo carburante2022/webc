@@ -368,20 +368,20 @@
     "isSelf": true
   },
   {
-    "content": "[noself] L-GNC",
-    "descCarburante": "L-GNC",
-    "id": "47",
-    "idImpianto": 33220,
-    "idInt": 47,
-    "isSelf": false
-  },
-  {
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
-    "id": "48",
+    "id": "47",
     "idImpianto": 54776,
-    "idInt": 48,
+    "idInt": 47,
     "isSelf": true
+  },
+  {
+    "content": "[noself] L-GNC",
+    "descCarburante": "L-GNC",
+    "id": "48",
+    "idImpianto": 11495,
+    "idInt": 48,
+    "isSelf": false
   },
   {
     "content": "[noself] GNL",
@@ -472,27 +472,19 @@
     "isSelf": true
   },
   {
-    "content": "[self] Gasolio Plus",
-    "descCarburante": "Gasolio Plus",
-    "id": "60",
-    "idImpianto": 46286,
-    "idInt": 60,
-    "isSelf": true
-  },
-  {
     "content": "[self] DieselMax",
     "descCarburante": "DieselMax",
-    "id": "61",
-    "idImpianto": 41112,
-    "idInt": 61,
+    "id": "60",
+    "idImpianto": 31538,
+    "idInt": 60,
     "isSelf": true
   },
   {
     "content": "[noself] SSP98",
     "descCarburante": "SSP98",
-    "id": "62",
+    "id": "61",
     "idImpianto": 10564,
-    "idInt": 62,
+    "idInt": 61,
     "isSelf": false
   }
 ]
