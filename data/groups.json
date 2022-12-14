@@ -35,7 +35,7 @@
     "content": "[self] Benzina WR 100",
     "descCarburante": "Benzina WR 100",
     "id": "5",
-    "idImpianto": 18295,
+    "idImpianto": 39483,
     "idInt": 5,
     "isSelf": true
   },
@@ -259,7 +259,7 @@
     "content": "[noself] Gasolio Premium",
     "descCarburante": "Gasolio Premium",
     "id": "33",
-    "idImpianto": 22869,
+    "idImpianto": 47890,
     "idInt": 33,
     "isSelf": false
   },
@@ -379,25 +379,25 @@
     "content": "[noself] L-GNC",
     "descCarburante": "L-GNC",
     "id": "48",
-    "idImpianto": 11495,
+    "idImpianto": 43643,
     "idInt": 48,
-    "isSelf": false
-  },
-  {
-    "content": "[noself] GNL",
-    "descCarburante": "GNL",
-    "id": "49",
-    "idImpianto": 31450,
-    "idInt": 49,
     "isSelf": false
   },
   {
     "content": "[self] GNL",
     "descCarburante": "GNL",
-    "id": "50",
+    "id": "49",
     "idImpianto": 48161,
-    "idInt": 50,
+    "idInt": 49,
     "isSelf": true
+  },
+  {
+    "content": "[noself] GNL",
+    "descCarburante": "GNL",
+    "id": "50",
+    "idImpianto": 51619,
+    "idInt": 50,
+    "isSelf": false
   },
   {
     "content": "[noself] Benzina Energy 98 ottani",
@@ -472,19 +472,19 @@
     "isSelf": true
   },
   {
-    "content": "[self] DieselMax",
-    "descCarburante": "DieselMax",
-    "id": "60",
-    "idImpianto": 31538,
-    "idInt": 60,
-    "isSelf": true
-  },
-  {
     "content": "[noself] SSP98",
     "descCarburante": "SSP98",
-    "id": "61",
+    "id": "60",
     "idImpianto": 10564,
-    "idInt": 61,
+    "idInt": 60,
     "isSelf": false
+  },
+  {
+    "content": "[self] DieselMax",
+    "descCarburante": "DieselMax",
+    "id": "61",
+    "idImpianto": 31538,
+    "idInt": 61,
+    "isSelf": true
   }
 ]
