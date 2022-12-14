@@ -486,5 +486,13 @@
     "idImpianto": 31538,
     "idInt": 61,
     "isSelf": true
+  },
+  {
+    "content": "[noself] Blu Diesel Alpino",
+    "descCarburante": "Blu Diesel Alpino",
+    "id": "62",
+    "idImpianto": 52905,
+    "idInt": 62,
+    "isSelf": false
   }
 ]
