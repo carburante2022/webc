@@ -35,7 +35,7 @@
     "content": "[self] Benzina WR 100",
     "descCarburante": "Benzina WR 100",
     "id": "5",
-    "idImpianto": 39483,
+    "idImpianto": 7483,
     "idInt": 5,
     "isSelf": true
   },
@@ -83,7 +83,7 @@
     "content": "[noself] Gasolio artico",
     "descCarburante": "Gasolio artico",
     "id": "11",
-    "idImpianto": 44604,
+    "idImpianto": 26143,
     "idInt": 11,
     "isSelf": false
   },
@@ -259,7 +259,7 @@
     "content": "[noself] Gasolio Premium",
     "descCarburante": "Gasolio Premium",
     "id": "33",
-    "idImpianto": 47890,
+    "idImpianto": 36273,
     "idInt": 33,
     "isSelf": false
   },
@@ -275,7 +275,7 @@
     "content": "[noself] Benzina Plus 98",
     "descCarburante": "Benzina Plus 98",
     "id": "35",
-    "idImpianto": 37121,
+    "idImpianto": 3992,
     "idInt": 35,
     "isSelf": false
   },
@@ -307,7 +307,7 @@
     "content": "[noself] Benzina speciale",
     "descCarburante": "Benzina speciale",
     "id": "39",
-    "idImpianto": 34582,
+    "idImpianto": 10700,
     "idInt": 39,
     "isSelf": false
   },
@@ -368,90 +368,90 @@
     "isSelf": false
   },
   {
-    "content": "[self] Gasolio Artico",
-    "descCarburante": "Gasolio Artico",
-    "id": "47",
-    "idImpianto": 20870,
-    "idInt": 47,
-    "isSelf": true
-  },
-  {
-    "content": "[noself] Gasolio Artico",
-    "descCarburante": "Gasolio Artico",
-    "id": "48",
-    "idImpianto": 43553,
-    "idInt": 48,
-    "isSelf": false
-  },
-  {
     "content": "[noself] L-GNC",
     "descCarburante": "L-GNC",
-    "id": "49",
-    "idImpianto": 40315,
-    "idInt": 49,
+    "id": "47",
+    "idImpianto": 52119,
+    "idInt": 47,
     "isSelf": false
   },
   {
     "content": "[self] L-GNC",
     "descCarburante": "L-GNC",
-    "id": "50",
-    "idImpianto": 51283,
-    "idInt": 50,
+    "id": "48",
+    "idImpianto": 54776,
+    "idInt": 48,
     "isSelf": true
-  },
-  {
-    "content": "[noself] GNL",
-    "descCarburante": "GNL",
-    "id": "51",
-    "idImpianto": 4036,
-    "idInt": 51,
-    "isSelf": false
-  },
-  {
-    "content": "[self] GNL",
-    "descCarburante": "GNL",
-    "id": "52",
-    "idImpianto": 48161,
-    "idInt": 52,
-    "isSelf": true
-  },
-  {
-    "content": "[self] Diesel Shell V Power",
-    "descCarburante": "Diesel Shell V Power",
-    "id": "53",
-    "idImpianto": 19032,
-    "idInt": 53,
-    "isSelf": true
-  },
-  {
-    "content": "[noself] Diesel Shell V Power",
-    "descCarburante": "Diesel Shell V Power",
-    "id": "54",
-    "idImpianto": 54071,
-    "idInt": 54,
-    "isSelf": false
   },
   {
     "content": "[self] S-Diesel",
     "descCarburante": "S-Diesel",
-    "id": "55",
+    "id": "49",
     "idImpianto": 33821,
-    "idInt": 55,
+    "idInt": 49,
     "isSelf": true
   },
   {
     "content": "[self] Benzina 100 ottani",
     "descCarburante": "Benzina 100 ottani",
-    "id": "56",
+    "id": "50",
     "idImpianto": 46294,
-    "idInt": 56,
+    "idInt": 50,
+    "isSelf": true
+  },
+  {
+    "content": "[noself] Gasolio Artico",
+    "descCarburante": "Gasolio Artico",
+    "id": "51",
+    "idImpianto": 43553,
+    "idInt": 51,
+    "isSelf": false
+  },
+  {
+    "content": "[self] Gasolio Artico",
+    "descCarburante": "Gasolio Artico",
+    "id": "52",
+    "idImpianto": 53114,
+    "idInt": 52,
     "isSelf": true
   },
   {
     "content": "[self] V-Power",
     "descCarburante": "V-Power",
-    "id": "57",
+    "id": "53",
     "idImpianto": 44998,
+    "idInt": 53,
+    "isSelf": true
+  },
+  {
+    "content": "[self] Diesel Shell V Power",
+    "descCarburante": "Diesel Shell V Power",
+    "id": "54",
+    "idImpianto": 30507,
+    "idInt": 54,
+    "isSelf": true
+  },
+  {
+    "content": "[noself] Diesel Shell V Power",
+    "descCarburante": "Diesel Shell V Power",
+    "id": "55",
+    "idImpianto": 54071,
+    "idInt": 55,
+    "isSelf": false
+  },
+  {
+    "content": "[noself] GNL",
+    "descCarburante": "GNL",
+    "id": "56",
+    "idImpianto": 52241,
+    "idInt": 56,
+    "isSelf": false
+  },
+  {
+    "content": "[self] GNL",
+    "descCarburante": "GNL",
+    "id": "57",
+    "idImpianto": 48161,
     "idInt": 57,
     "isSelf": true
   },
