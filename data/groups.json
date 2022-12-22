@@ -35,7 +35,7 @@
     "content": "[self] Benzina WR 100",
     "descCarburante": "Benzina WR 100",
     "id": "5",
-    "idImpianto": 32800,
+    "idImpianto": 19084,
     "idInt": 5,
     "isSelf": true
   },
@@ -83,7 +83,7 @@
     "content": "[noself] Gasolio artico",
     "descCarburante": "Gasolio artico",
     "id": "11",
-    "idImpianto": 29214,
+    "idImpianto": 20097,
     "idInt": 11,
     "isSelf": false
   },
@@ -384,115 +384,115 @@
     "isSelf": true
   },
   {
-    "content": "[self] S-Diesel",
-    "descCarburante": "S-Diesel",
-    "id": "49",
-    "idImpianto": 33821,
-    "idInt": 49,
-    "isSelf": true
-  },
-  {
     "content": "[noself] GNL",
     "descCarburante": "GNL",
-    "id": "50",
+    "id": "49",
     "idImpianto": 52241,
-    "idInt": 50,
+    "idInt": 49,
     "isSelf": false
   },
   {
     "content": "[self] GNL",
     "descCarburante": "GNL",
-    "id": "51",
+    "id": "50",
     "idImpianto": 48161,
-    "idInt": 51,
-    "isSelf": true
-  },
-  {
-    "content": "[noself] Benzina Energy 98 ottani",
-    "descCarburante": "Benzina Energy 98 ottani",
-    "id": "52",
-    "idImpianto": 34936,
-    "idInt": 52,
-    "isSelf": false
-  },
-  {
-    "content": "[noself] Gasolio Energy D",
-    "descCarburante": "Gasolio Energy D",
-    "id": "53",
-    "idImpianto": 25673,
-    "idInt": 53,
-    "isSelf": false
-  },
-  {
-    "content": "[self] Gasolio Energy D",
-    "descCarburante": "Gasolio Energy D",
-    "id": "54",
-    "idImpianto": 35203,
-    "idInt": 54,
+    "idInt": 50,
     "isSelf": true
   },
   {
     "content": "[self] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
-    "id": "55",
-    "idImpianto": 4866,
-    "idInt": 55,
+    "id": "51",
+    "idImpianto": 17814,
+    "idInt": 51,
     "isSelf": true
   },
   {
     "content": "[noself] Diesel Shell V Power",
     "descCarburante": "Diesel Shell V Power",
-    "id": "56",
+    "id": "52",
     "idImpianto": 54071,
-    "idInt": 56,
+    "idInt": 52,
     "isSelf": false
   },
   {
     "content": "[self] V-Power",
     "descCarburante": "V-Power",
-    "id": "57",
+    "id": "53",
     "idImpianto": 44998,
-    "idInt": 57,
+    "idInt": 53,
     "isSelf": true
   },
   {
     "content": "[noself] Gasolio Artico",
     "descCarburante": "Gasolio Artico",
-    "id": "58",
+    "id": "54",
     "idImpianto": 43553,
-    "idInt": 58,
+    "idInt": 54,
     "isSelf": false
   },
   {
     "content": "[self] Gasolio Artico",
     "descCarburante": "Gasolio Artico",
-    "id": "59",
+    "id": "55",
     "idImpianto": 44654,
-    "idInt": 59,
+    "idInt": 55,
     "isSelf": true
   },
   {
-    "content": "[noself] SSP98",
-    "descCarburante": "SSP98",
-    "id": "60",
-    "idImpianto": 10564,
-    "idInt": 60,
-    "isSelf": false
+    "content": "[self] S-Diesel",
+    "descCarburante": "S-Diesel",
+    "id": "56",
+    "idImpianto": 51212,
+    "idInt": 56,
+    "isSelf": true
   },
   {
     "content": "[self] Benzina 100 ottani",
     "descCarburante": "Benzina 100 ottani",
-    "id": "61",
+    "id": "57",
     "idImpianto": 46294,
-    "idInt": 61,
+    "idInt": 57,
     "isSelf": true
   },
   {
     "content": "[self] DieselMax",
     "descCarburante": "DieselMax",
-    "id": "62",
-    "idImpianto": 31538,
-    "idInt": 62,
+    "id": "58",
+    "idImpianto": 41112,
+    "idInt": 58,
     "isSelf": true
+  },
+  {
+    "content": "[noself] Benzina Energy 98 ottani",
+    "descCarburante": "Benzina Energy 98 ottani",
+    "id": "59",
+    "idImpianto": 34936,
+    "idInt": 59,
+    "isSelf": false
+  },
+  {
+    "content": "[noself] Gasolio Energy D",
+    "descCarburante": "Gasolio Energy D",
+    "id": "60",
+    "idImpianto": 25673,
+    "idInt": 60,
+    "isSelf": false
+  },
+  {
+    "content": "[self] Gasolio Energy D",
+    "descCarburante": "Gasolio Energy D",
+    "id": "61",
+    "idImpianto": 35203,
+    "idInt": 61,
+    "isSelf": true
+  },
+  {
+    "content": "[noself] SSP98",
+    "descCarburante": "SSP98",
+    "id": "62",
+    "idImpianto": 10564,
+    "idInt": 62,
+    "isSelf": false
   }
 ]
