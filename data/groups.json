@@ -126,5 +126,13 @@
     "idImpianto": 43553,
     "idInt": 16,
     "isSelf": false
+  },
+  {
+    "content": "[noself] Benzina Plus 98",
+    "descCarburante": "Benzina Plus 98",
+    "id": "17",
+    "idImpianto": 51269,
+    "idInt": 17,
+    "isSelf": false
   }
 ]
