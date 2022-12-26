@@ -1,41 +1,41 @@
 [
   {
-    "content": "[self] Benzina",
-    "descCarburante": "Benzina",
-    "id": "1",
-    "idImpianto": 43517,
-    "idInt": 1,
-    "isSelf": true
-  },
-  {
     "content": "[noself] Benzina",
     "descCarburante": "Benzina",
-    "id": "2",
-    "idImpianto": 46772,
-    "idInt": 2,
+    "id": "1",
+    "idImpianto": 3464,
+    "idInt": 1,
     "isSelf": false
   },
   {
-    "content": "[noself] Gasolio",
-    "descCarburante": "Gasolio",
-    "id": "3",
-    "idImpianto": 34955,
-    "idInt": 3,
-    "isSelf": false
+    "content": "[self] Benzina",
+    "descCarburante": "Benzina",
+    "id": "2",
+    "idImpianto": 3468,
+    "idInt": 2,
+    "isSelf": true
   },
   {
     "content": "[self] Gasolio",
     "descCarburante": "Gasolio",
-    "id": "4",
-    "idImpianto": 30612,
-    "idInt": 4,
+    "id": "3",
+    "idImpianto": 3995,
+    "idInt": 3,
     "isSelf": true
+  },
+  {
+    "content": "[noself] Gasolio",
+    "descCarburante": "Gasolio",
+    "id": "4",
+    "idImpianto": 10391,
+    "idInt": 4,
+    "isSelf": false
   },
   {
     "content": "[noself] Metano",
     "descCarburante": "Metano",
     "id": "5",
-    "idImpianto": 36194,
+    "idImpianto": 4006,
     "idInt": 5,
     "isSelf": false
   },
@@ -43,7 +43,7 @@
     "content": "[self] Metano",
     "descCarburante": "Metano",
     "id": "6",
-    "idImpianto": 43830,
+    "idImpianto": 46760,
     "idInt": 6,
     "isSelf": true
   },
@@ -59,80 +59,64 @@
     "content": "[self] GPL",
     "descCarburante": "GPL",
     "id": "8",
-    "idImpianto": 49434,
+    "idImpianto": 51267,
     "idInt": 8,
-    "isSelf": true
-  },
-  {
-    "content": "[self] Benzina Plus 98",
-    "descCarburante": "Benzina Plus 98",
-    "id": "9",
-    "idImpianto": 51269,
-    "idInt": 9,
-    "isSelf": true
-  },
-  {
-    "content": "[noself] Benzina speciale",
-    "descCarburante": "Benzina speciale",
-    "id": "10",
-    "idImpianto": 49988,
-    "idInt": 10,
-    "isSelf": false
-  },
-  {
-    "content": "[self] Benzina speciale",
-    "descCarburante": "Benzina speciale",
-    "id": "11",
-    "idImpianto": 49987,
-    "idInt": 11,
     "isSelf": true
   },
   {
     "content": "[noself] L-GNC",
     "descCarburante": "L-GNC",
-    "id": "12",
-    "idImpianto": 44764,
-    "idInt": 12,
+    "id": "9",
+    "idImpianto": 38589,
+    "idInt": 9,
     "isSelf": false
   },
   {
-    "content": "[self] L-GNC",
-    "descCarburante": "L-GNC",
-    "id": "13",
-    "idImpianto": 51283,
-    "idInt": 13,
-    "isSelf": true
-  },
-  {
-    "content": "[noself] GNL",
-    "descCarburante": "GNL",
-    "id": "14",
-    "idImpianto": 52241,
-    "idInt": 14,
+    "content": "[noself] Gasolio Artico",
+    "descCarburante": "Gasolio Artico",
+    "id": "10",
+    "idImpianto": 43553,
+    "idInt": 10,
     "isSelf": false
   },
   {
     "content": "[self] GNL",
     "descCarburante": "GNL",
-    "id": "15",
+    "id": "11",
     "idImpianto": 48161,
-    "idInt": 15,
+    "idInt": 11,
     "isSelf": true
   },
   {
-    "content": "[noself] Gasolio Artico",
-    "descCarburante": "Gasolio Artico",
-    "id": "16",
-    "idImpianto": 43553,
-    "idInt": 16,
+    "content": "[noself] GNL",
+    "descCarburante": "GNL",
+    "id": "12",
+    "idImpianto": 50150,
+    "idInt": 12,
     "isSelf": false
+  },
+  {
+    "content": "[noself] Benzina speciale",
+    "descCarburante": "Benzina speciale",
+    "id": "13",
+    "idImpianto": 49939,
+    "idInt": 13,
+    "isSelf": false
+  },
+  {
+    "content": "[self] Benzina speciale",
+    "descCarburante": "Benzina speciale",
+    "id": "14",
+    "idImpianto": 49987,
+    "idInt": 14,
+    "isSelf": true
   },
   {
     "content": "[noself] Benzina Plus 98",
     "descCarburante": "Benzina Plus 98",
-    "id": "17",
+    "id": "15",
     "idImpianto": 51269,
-    "idInt": 17,
+    "idInt": 15,
     "isSelf": false
   }
 ]
