@@ -16,50 +16,50 @@
     "isSelf": true
   },
   {
-    "content": "[self] Gasolio",
-    "descCarburante": "Gasolio",
-    "id": "3",
-    "idImpianto": 3995,
-    "idInt": 3,
-    "isSelf": true
-  },
-  {
-    "content": "[noself] Gasolio",
-    "descCarburante": "Gasolio",
-    "id": "4",
-    "idImpianto": 10391,
-    "idInt": 4,
-    "isSelf": false
-  },
-  {
     "content": "[noself] Metano",
     "descCarburante": "Metano",
-    "id": "5",
+    "id": "3",
     "idImpianto": 4006,
-    "idInt": 5,
+    "idInt": 3,
     "isSelf": false
   },
   {
     "content": "[self] Metano",
     "descCarburante": "Metano",
-    "id": "6",
+    "id": "4",
     "idImpianto": 46760,
-    "idInt": 6,
+    "idInt": 4,
     "isSelf": true
   },
   {
     "content": "[noself] GPL",
     "descCarburante": "GPL",
-    "id": "7",
+    "id": "5",
     "idImpianto": 4048,
-    "idInt": 7,
+    "idInt": 5,
     "isSelf": false
   },
   {
     "content": "[self] GPL",
     "descCarburante": "GPL",
-    "id": "8",
+    "id": "6",
     "idImpianto": 51267,
+    "idInt": 6,
+    "isSelf": true
+  },
+  {
+    "content": "[noself] Gasolio",
+    "descCarburante": "Gasolio",
+    "id": "7",
+    "idImpianto": 10391,
+    "idInt": 7,
+    "isSelf": false
+  },
+  {
+    "content": "[self] Gasolio",
+    "descCarburante": "Gasolio",
+    "id": "8",
+    "idImpianto": 35383,
     "idInt": 8,
     "isSelf": true
   },
