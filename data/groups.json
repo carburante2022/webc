@@ -118,5 +118,13 @@
     "idImpianto": 51269,
     "idInt": 15,
     "isSelf": false
+  },
+  {
+    "content": "[self] Benzina WR 100",
+    "descCarburante": "Benzina WR 100",
+    "id": "16",
+    "idImpianto": 7255,
+    "idInt": 16,
+    "isSelf": true
   }
 ]
