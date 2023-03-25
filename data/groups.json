@@ -118,5 +118,13 @@
     "idImpianto": 51269,
     "idInt": 15,
     "isSelf": false
+  },
+  {
+    "content": "[self] Hi-Q Diesel",
+    "descCarburante": "Hi-Q Diesel",
+    "id": "16",
+    "idImpianto": 47770,
+    "idInt": 16,
+    "isSelf": true
   }
 ]
