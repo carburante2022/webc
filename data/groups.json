@@ -96,20 +96,20 @@
     "isSelf": false
   },
   {
-    "content": "[noself] Benzina speciale",
+    "content": "[self] Benzina speciale",
     "descCarburante": "Benzina speciale",
     "id": "13",
     "idImpianto": 49939,
     "idInt": 13,
-    "isSelf": false
+    "isSelf": true
   },
   {
-    "content": "[self] Benzina speciale",
+    "content": "[noself] Benzina speciale",
     "descCarburante": "Benzina speciale",
     "id": "14",
-    "idImpianto": 49987,
+    "idImpianto": 49988,
     "idInt": 14,
-    "isSelf": true
+    "isSelf": false
   },
   {
     "content": "[noself] Benzina Plus 98",
