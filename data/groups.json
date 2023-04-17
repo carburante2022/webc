@@ -80,51 +80,43 @@
     "isSelf": false
   },
   {
-    "content": "[self] Hi-Q Diesel",
-    "descCarburante": "Hi-Q Diesel",
-    "id": "11",
-    "idImpianto": 47770,
-    "idInt": 11,
-    "isSelf": true
-  },
-  {
     "content": "[self] GNL",
     "descCarburante": "GNL",
-    "id": "12",
+    "id": "11",
     "idImpianto": 48161,
-    "idInt": 12,
+    "idInt": 11,
     "isSelf": true
   },
   {
     "content": "[noself] GNL",
     "descCarburante": "GNL",
-    "id": "13",
+    "id": "12",
     "idImpianto": 50150,
-    "idInt": 13,
+    "idInt": 12,
     "isSelf": false
   },
   {
     "content": "[self] Benzina speciale",
     "descCarburante": "Benzina speciale",
-    "id": "14",
+    "id": "13",
     "idImpianto": 49939,
-    "idInt": 14,
+    "idInt": 13,
     "isSelf": true
   },
   {
     "content": "[noself] Benzina speciale",
     "descCarburante": "Benzina speciale",
-    "id": "15",
+    "id": "14",
     "idImpianto": 49988,
-    "idInt": 15,
+    "idInt": 14,
     "isSelf": false
   },
   {
     "content": "[noself] Benzina Plus 98",
     "descCarburante": "Benzina Plus 98",
-    "id": "16",
+    "id": "15",
     "idImpianto": 51269,
-    "idInt": 16,
+    "idInt": 15,
     "isSelf": false
   }
 ]
