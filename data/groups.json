@@ -48,83 +48,83 @@
     "isSelf": true
   },
   {
+    "content": "[self] Benzina WR 100",
+    "descCarburante": "Benzina WR 100",
+    "id": "7",
+    "idImpianto": 8489,
+    "idInt": 7,
+    "isSelf": true
+  },
+  {
     "content": "[noself] Gasolio",
     "descCarburante": "Gasolio",
-    "id": "7",
+    "id": "8",
     "idImpianto": 10391,
-    "idInt": 7,
+    "idInt": 8,
     "isSelf": false
   },
   {
     "content": "[self] Gasolio",
     "descCarburante": "Gasolio",
-    "id": "8",
+    "id": "9",
     "idImpianto": 35383,
-    "idInt": 8,
+    "idInt": 9,
     "isSelf": true
   },
   {
     "content": "[noself] L-GNC",
     "descCarburante": "L-GNC",
-    "id": "9",
+    "id": "10",
     "idImpianto": 38589,
-    "idInt": 9,
+    "idInt": 10,
     "isSelf": false
   },
   {
     "content": "[noself] Gasolio Artico",
     "descCarburante": "Gasolio Artico",
-    "id": "10",
+    "id": "11",
     "idImpianto": 43553,
-    "idInt": 10,
+    "idInt": 11,
     "isSelf": false
   },
   {
     "content": "[self] GNL",
     "descCarburante": "GNL",
-    "id": "11",
+    "id": "12",
     "idImpianto": 48161,
-    "idInt": 11,
+    "idInt": 12,
     "isSelf": true
   },
   {
     "content": "[noself] GNL",
     "descCarburante": "GNL",
-    "id": "12",
+    "id": "13",
     "idImpianto": 50150,
-    "idInt": 12,
+    "idInt": 13,
     "isSelf": false
   },
   {
     "content": "[self] Benzina speciale",
     "descCarburante": "Benzina speciale",
-    "id": "13",
+    "id": "14",
     "idImpianto": 49939,
-    "idInt": 13,
+    "idInt": 14,
     "isSelf": true
   },
   {
     "content": "[noself] Benzina speciale",
     "descCarburante": "Benzina speciale",
-    "id": "14",
+    "id": "15",
     "idImpianto": 49988,
-    "idInt": 14,
+    "idInt": 15,
     "isSelf": false
   },
   {
     "content": "[noself] Benzina Plus 98",
     "descCarburante": "Benzina Plus 98",
-    "id": "15",
-    "idImpianto": 51269,
-    "idInt": 15,
-    "isSelf": false
-  },
-  {
-    "content": "[self] Benzina WR 100",
-    "descCarburante": "Benzina WR 100",
     "id": "16",
-    "idImpianto": 8489,
+    "idImpianto": 51269,
     "idInt": 16,
-    "isSelf": true
+    "isSelf": false
   }
 ]
