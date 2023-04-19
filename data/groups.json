@@ -126,5 +126,13 @@
     "idImpianto": 51269,
     "idInt": 16,
     "isSelf": false
+  },
+  {
+    "content": "[self] Blue Super",
+    "descCarburante": "Blue Super",
+    "id": "17",
+    "idImpianto": 49087,
+    "idInt": 17,
+    "isSelf": true
   }
 ]
