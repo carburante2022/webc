@@ -96,35 +96,27 @@
     "isSelf": false
   },
   {
-    "content": "[self] Blue Super",
-    "descCarburante": "Blue Super",
-    "id": "13",
-    "idImpianto": 49087,
-    "idInt": 13,
-    "isSelf": true
-  },
-  {
     "content": "[self] Benzina speciale",
     "descCarburante": "Benzina speciale",
-    "id": "14",
+    "id": "13",
     "idImpianto": 49939,
-    "idInt": 14,
+    "idInt": 13,
     "isSelf": true
   },
   {
     "content": "[noself] Benzina speciale",
     "descCarburante": "Benzina speciale",
-    "id": "15",
+    "id": "14",
     "idImpianto": 49988,
-    "idInt": 15,
+    "idInt": 14,
     "isSelf": false
   },
   {
     "content": "[noself] Benzina Plus 98",
     "descCarburante": "Benzina Plus 98",
-    "id": "16",
+    "id": "15",
     "idImpianto": 51269,
-    "idInt": 16,
+    "idInt": 15,
     "isSelf": false
   }
 ]
