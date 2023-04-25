@@ -118,5 +118,13 @@
     "idImpianto": 51269,
     "idInt": 15,
     "isSelf": false
+  },
+  {
+    "content": "[noself] Blue Diesel",
+    "descCarburante": "Blue Diesel",
+    "id": "16",
+    "idImpianto": 53289,
+    "idInt": 16,
+    "isSelf": false
   }
 ]
