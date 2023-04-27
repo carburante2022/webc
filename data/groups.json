@@ -118,5 +118,13 @@
     "idImpianto": 51269,
     "idInt": 15,
     "isSelf": false
+  },
+  {
+    "content": "[noself] Supreme Diesel",
+    "descCarburante": "Supreme Diesel",
+    "id": "16",
+    "idImpianto": 45072,
+    "idInt": 16,
+    "isSelf": false
   }
 ]
